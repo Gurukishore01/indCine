@@ -152,6 +152,20 @@
         "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
         "window": "day",
         "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      },
+      {
+        "id": "obs_1793875601551_xz7h",
+        "movieId": "656908",
+        "title": "Ramayana: Rise of a Legend",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T10:46:41.551Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 42.7,
+        "rank": 1,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
       }
     ],
     "day:1117898": [
@@ -1323,6 +1337,6 @@
       }
     ]
   },
-  "totalSnapshotsTaken": 6,
-  "lastSnapshotAt": "2026-11-05T10:03:00.147Z"
+  "totalSnapshotsTaken": 7,
+  "lastSnapshotAt": "2026-11-05T10:46:41.551Z"
 }
