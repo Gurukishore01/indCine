@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CINEMIND — Where to Watch The Dark Knight</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk & Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration verbatim from Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#35343a",
+            "secondary-container": "#ee9800",
+            "surface-bright": "#39383e",
+            "secondary": "#ffb95f",
+            "surface-container-highest": "#35343a",
+            "surface-container": "#1f1f25",
+            "primary-fixed-dim": "#ffb3b6",
+            "inverse-on-surface": "#303036",
+            "surface-container-high": "#2a292f",
+            "inverse-primary": "#be0037",
+            "on-primary-fixed-variant": "#920028",
+            "tertiary-container": "#007ca8",
+            "on-tertiary-fixed": "#001e2c",
+            "on-primary-fixed": "#40000c",
+            "error-container": "#93000a",
+            "on-secondary-fixed": "#2a1700",
+            "on-secondary-fixed-variant": "#653e00",
+            "surface-tint": "#ffb3b6",
+            "on-tertiary-container": "#f8fbff",
+            "on-primary-container": "#fffaf9",
+            "on-surface": "#e4e1e9",
+            "surface-container-lowest": "#0e0e13",
+            "primary-container": "#e11d48",
+            "surface-dim": "#131318",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#1b1b20",
+            "error": "#ffb4ab",
+            "tertiary": "#7bd0ff",
+            "on-secondary": "#472a00",
+            "secondary-fixed": "#ffddb8",
+            "background": "#131318",
+            "on-background": "#e4e1e9",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "outline": "#ac8889",
+            "inverse-surface": "#e4e1e9",
+            "on-error": "#690005",
+            "on-tertiary-fixed-variant": "#004c69",
+            "on-surface-variant": "#e5bdbe",
+            "surface": "#131318",
+            "on-tertiary": "#00354a",
+            "secondary-fixed-dim": "#ffb95f",
+            "tertiary-fixed": "#c4e7ff",
+            "on-secondary-container": "#5b3800",
+            "outline-variant": "#5c3f40",
+            "primary-fixed": "#ffdada",
+            "on-primary": "#68001a",
+            "primary": "#ffb3b6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "0.75rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.25rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Space Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "label-sm": ["Manrope"],
+            "body-md": ["Manrope"],
+            "label-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "headline-lg": ["Space Grotesk"],
+            "body-sm": ["Manrope"],
+            "display-hero-mobile": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #131318;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #35343a;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container font-body-md min-h-screen flex flex-col antialiased">
+<!-- ========================================================
+       TOP NAVIGATION BAR (SHARED COMPONENT JSON)
+       Active Destination: "Where to Watch"
+  ======================================================== -->
+<header class="bg-surface-container-lowest/90 dark:bg-surface-container-lowest/90 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/20 dark:border-outline-variant/20 shadow-lg shadow-black/40">
+<div class="w-full px-gutter max-w-7xl mx-auto flex items-center justify-between h-16">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface flex items-center gap-2" href="#">
+<span class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-md shadow-primary-container/40">
+<span class="material-symbols-outlined" data-icon="movie_filter" style="font-variation-settings: 'FILL' 1;">movie_filter</span>
+</span>
+<span>CINEMIND</span>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-6">
+<!-- Discover -->
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">Discover</a>
+<!-- In Theatres -->
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">In Theatres</a>
+<!-- Where to Watch (ACTIVE) -->
+<a class="text-primary-container dark:text-primary font-label-lg border-b-2 border-primary-container dark:border-primary pb-1" href="#">Where to Watch</a>
+<!-- Quick Pick -->
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">Quick Pick</a>
+<!-- Watchlist -->
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">Watchlist</a>
+</nav>
+<!-- Trailing Action Cluster & Search Bar on Right -->
+<div class="flex items-center gap-3">
+<!-- Integrated Search Bar -->
+<div class="relative hidden sm:block w-48 lg:w-64">
+<span class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="search">search</span>
+</span>
+<input class="w-full bg-surface-container-high/80 border border-outline-variant/30 text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant/60 rounded-full pl-9 pr-3 py-1.5 focus:outline-none focus:border-primary-container transition-all" placeholder="Search titles, OTT..." type="text"/>
+</div>
+<!-- Trailing Icon Actions -->
+<button aria-label="Notifications" class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-full transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button aria-label="Bookmark" class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-full transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+</button>
+<!-- Primary Action -->
+<button class="hidden lg:inline-flex items-center justify-center bg-secondary-container text-on-secondary-container hover:bg-secondary font-label-md font-bold px-4 py-2 rounded-full transition-all duration-200 active:scale-95 shadow-md shadow-secondary-container/20">
+          Get Tickets
+        </button>
+<!-- Profile Avatar -->
+<div class="w-8 h-8 rounded-full border border-outline-variant/40 overflow-hidden cursor-pointer">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="Portrait photo of a young modern film enthusiast with cinematic ambient rim lighting in cool teal and soft crimson theater tones, dark modern hair, framed against a darkened studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2L8QWUkSeXxxFZgDvzhJfntOFZS7ABUPC7HYoIUWfvVO-pxVSKrPkAZlUInCmiJLQMX-qlV-IO0Sop9mSHWRLoFsSHnxJM39whLlY51b1IlEqqmCfzfeK-U-m7kJx4QO51NNo3jOjmq-BofdjRNqN7h7jsRNt7BSdGviPGkmVZt4qcT7Xwkc8zd5sqMTLXdHz8hJs-GNc3A9HjIP1kOIyB4VRKUliOgxLRlbcpI-1"/>
+</div>
+</div>
+</div>
+</header>
+<!-- ========================================================
+       MAIN ROUTING CANVAS
+  ======================================================== -->
+<main class="flex-1 w-full max-w-7xl mx-auto px-gutter py-6 md:py-8 space-y-8">
+<!-- BREADCRUMB & CONTEXTUAL NAVIGATION ANCHOR -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<a class="inline-flex items-center gap-2 text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors py-1 px-3 rounded-full bg-surface-container-low border border-outline-variant/20 hover:border-primary-container/40" href="#">
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
+<span>Back to Movie Details</span>
+</a>
+<!-- Quick Title Switcher & Live Aggregator Ping -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high/60 border border-outline-variant/20 text-body-sm font-body-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Routing Engine: Live Aggregation (Checked 12m ago)</span>
+</div>
+</div>
+</div>
+<!-- ========================================================
+         COMPACT MOVIE CONTEXT BANNER
+         Inspired by TV OTT Aggregator interfaces (Image 1 & 2)
+    ======================================================== -->
+<section class="relative overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant/20 shadow-xl shadow-black/60">
+<!-- Backdrop Vignette Image Layer -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-30 transform scale-105 filter blur-[1px]" data-alt="Cinematic atmospheric film still of a dark, brooding, neon-drenched city skyline at night with wet asphalt reflections, deep obsidian tones, and mysterious headlights cutting through mist." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ_LFfmZisxI3iG_BaKcxTi1xmEYnByCZgdpP7jcQn0Vp1UjREcRkFiUTfUZjgTNskIRnmWZJ4IvkoPUrmaZxV-HJppsmaVS_eGGtPBSaDh0XMSnJFWWHm2jBE-eGbJU6ygOEn5jFVgMuPlc7nurl1HZzxYxe_wrC5gFy42M0D4KJKwO-sdB7C7rBxNAwuxPqFU2EeywY-Jj-TxImrJVJ7T2qASrDZLnBR2YnDlRi2')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/90 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+</div>
+<!-- Banner Content Grid -->
+<div class="relative z-10 p-5 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex items-start md:items-center gap-5">
+<!-- Poster Thumbnail (2:3 Aspect Ratio) -->
+<div class="w-20 md:w-24 aspect-[2/3] shrink-0 rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
+<img alt="The Dark Knight Movie Poster" class="w-full h-full object-cover" data-alt="Iconic theatrical movie poster showing a dark masked vigilante standing amidst towering smoke-filled Gotham skyscrapers under brooding storm clouds with high contrast obsidian and amber embers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgZi5RjeSGSUMRX72OcsNfLaZ-DUD_jcLokckd_HmxrTubrV0jPaTFkkauJ9V3vZ1rwoMOxIfIg796Dh8zCs5NH_gObP_MLg_SV7FCY5sSlZG-eWjoGcZVwRH4oDLXv-Ck-Fak6TxDOb26STzVkQjMI34tz9VU2P1t1wleZBZ4ciIldDQJ367SEYT9_iAI6YFcZylmqwqY-w26I-4ED3h4v6QOM37PQqpsvEptjedK"/>
+</div>
+<!-- Metadata Information Stack -->
+<div class="space-y-2">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-primary-container/20 text-primary border border-primary-container/40">MASTER LICENSED</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">2008</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">2h 32m</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="px-1.5 py-0.2 rounded text-label-sm font-label-sm bg-surface-variant text-on-surface">PG-13</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+              THE DARK KNIGHT <span class="text-on-surface-variant/60 font-normal text-headline-md font-headline-md">(2008)</span>
+</h1>
+<div class="flex flex-wrap items-center gap-4 text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-secondary text-[16px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                9.0 / 10 IMDb
+              </span>
+<span class="flex items-center gap-1 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[16px]" data-icon="thumb_up">thumb_up</span>
+                94% Rotten Tomatoes
+              </span>
+<span class="hidden sm:inline text-on-surface-variant/40">•</span>
+<span class="text-on-surface-variant">Action, Crime, Drama</span>
+<span class="hidden sm:inline text-on-surface-variant/40">•</span>
+<span class="text-on-surface-variant">Dir. Christopher Nolan</span>
+</div>
+</div>
+</div>
+<!-- Quick Switcher Dropdown Action -->
+<div class="w-full md:w-auto shrink-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+<div class="relative">
+<button class="w-full flex items-center justify-between gap-3 bg-surface-container-high/90 hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-xl text-label-md font-label-md transition-colors">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="swap_horiz">swap_horiz</span>
+<span>Change Title</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+<button class="flex items-center justify-center gap-2 bg-surface-variant/50 hover:bg-surface-variant text-on-surface border border-outline-variant/20 px-3.5 py-2 rounded-xl text-label-md font-label-md transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px]" data-icon="bookmark_add">bookmark_add</span>
+<span>Watchlist</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ========================================================
+         REGION SELECTOR BAR & AUDIO/VIDEO AUDIT BADGE
+    ======================================================== -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 shadow-sm">
+<!-- Territory Chips -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="text-label-md font-label-md text-on-surface-variant mr-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="public">public</span>
+          Territory:
+        </span>
+<!-- Selected Active Region: India -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container text-label-md font-label-md shadow-md shadow-primary-container/20">
+<span>🇮🇳 India (Catalog Active)</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="check">check</span>
+</button>
+<!-- Inactive Regional Switchers -->
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-variant border border-outline-variant/20 text-label-md font-label-md transition-colors">
+<span>🇺🇸 United States</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-variant border border-outline-variant/20 text-label-md font-label-md transition-colors">
+<span>🇬🇧 United Kingdom</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-variant border border-outline-variant/20 text-label-md font-label-md transition-colors">
+<span>🇨🇦 Canada</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-variant border border-outline-variant/20 text-label-md font-label-md transition-colors">
+<span>🇦🇺 Australia</span>
+</button>
+</div>
+<!-- Technical Master Stream Badge -->
+<div class="flex items-center gap-2 bg-surface-container-lowest/80 px-3.5 py-1.5 rounded-lg border border-outline-variant/30 text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-on-surface">Available in <strong class="text-secondary font-semibold">4K UHD</strong>, <strong class="text-on-surface font-semibold">Dolby Vision</strong> &amp; <strong class="text-on-surface font-semibold">Atmos</strong> across 4 verified platforms</span>
+</div>
+</div>
+<!-- ========================================================
+         SECTION 1: SUBSCRIPTION STREAMING SERVICES
+         Legitimate deep-link routing
+    ======================================================== -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-6 bg-primary-container rounded-full"></span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Subscription Streaming</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-label-sm font-label-sm text-primary">3 AVAILABLE</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant hidden sm:block">Watch instantly with an active user membership</p>
+</div>
+<!-- 3-Column Bento Aggregator Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- CARD 1: NETFLIX -->
+<div class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/20 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:border-primary-container/40 hover:shadow-xl group">
+<div class="space-y-4">
+<!-- Header with Official Brand Wordmark & Inclusion Pill -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-black border border-white/10 flex items-center justify-center p-2 shadow-inner">
+<span class="text-red-600 font-extrabold text-2xl tracking-tighter">N</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">Netflix</h3>
+<span class="text-label-sm font-label-sm text-emerald-400 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="check_circle">check_circle</span>
+                    Included in Subscription
+                  </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-surface-container-highest text-on-surface border border-outline-variant/30">
+                Premium 4K
+              </span>
+</div>
+<!-- Technical Stream Specs -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">4K UHD</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">HDR10</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">5.1 SURROUND</span>
+</div>
+<!-- Audio & Dubbing Metadata -->
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-1 border-t border-outline-variant/10 pt-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70" data-icon="translate">translate</span>
+<span>Audio: <strong class="text-on-surface font-medium">English [Original], Hindi Dub</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70" data-icon="subtitles">subtitles</span>
+<span>Subtitles: English [CC], Hindi, Tamil</span>
+</div>
+</div>
+</div>
+<!-- Direct Verified Deep Link -->
+<div class="pt-5">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-label-lg font-bold py-2.5 px-4 rounded-xl transition-all duration-200 active:scale-95 shadow-md shadow-primary-container/30" href="https://www.netflix.com" rel="noopener noreferrer" target="_blank">
+<span>Watch on Netflix</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- CARD 2: PRIME VIDEO -->
+<div class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/20 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:border-primary-container/40 hover:shadow-xl group">
+<div class="space-y-4">
+<!-- Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#000511] border border-[#00a8e1]/30 flex items-center justify-center p-2 shadow-inner">
+<span class="text-[#00a8e1] font-bold text-base tracking-tight leading-none">prime</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">Prime Video</h3>
+<span class="text-label-sm font-label-sm text-emerald-400 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="check_circle">check_circle</span>
+                    Included with Prime
+                  </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-surface-container-highest text-on-surface border border-outline-variant/30">
+                X-Ray Enabled
+              </span>
+</div>
+<!-- Specs -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">4K UHD</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">HDR</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">DOLBY ATMOS</span>
+</div>
+<!-- Audio & Dubbing Metadata -->
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-1 border-t border-outline-variant/10 pt-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70" data-icon="translate">translate</span>
+<span>Audio: <strong class="text-on-surface font-medium">English [Original], Telugu, Tamil</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70" data-icon="subtitles">subtitles</span>
+<span>Subtitles: English, Hindi, Arabic</span>
+</div>
+</div>
+</div>
+<!-- Deep Link -->
+<div class="pt-5">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-bright hover:bg-surface-variant text-on-surface border border-outline-variant/40 hover:border-primary-container font-label-lg font-bold py-2.5 px-4 rounded-xl transition-all duration-200 active:scale-95" href="https://www.primevideo.com" rel="noopener noreferrer" target="_blank">
+<span>Watch on Prime Video</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- CARD 3: JIOHOTSTAR -->
+<div class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/20 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:border-primary-container/40 hover:shadow-xl group">
+<div class="space-y-4">
+<!-- Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0c111d] to-[#04060b] border border-blue-500/20 flex items-center justify-center p-2 shadow-inner">
+<span class="text-blue-400 font-extrabold text-sm tracking-tight">HOTSTAR</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">JioHotstar</h3>
+<span class="text-label-sm font-label-sm text-emerald-400 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="check_circle">check_circle</span>
+                    Included in Super/Premium
+                  </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-surface-container-highest text-on-surface border border-outline-variant/30">
+                Dolby Vision
+              </span>
+</div>
+<!-- Specs -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">4K UHD</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">DOLBY VISION</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">ATMOS</span>
+</div>
+<!-- Audio & Dubbing Metadata -->
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-1 border-t border-outline-variant/10 pt-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70" data-icon="translate">translate</span>
+<span>Audio: <strong class="text-on-surface font-medium">English, Hindi, Bengali</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70" data-icon="subtitles">subtitles</span>
+<span>Subtitles: English [Full]</span>
+</div>
+</div>
+</div>
+<!-- Deep Link -->
+<div class="pt-5">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-bright hover:bg-surface-variant text-on-surface border border-outline-variant/40 hover:border-primary-container font-label-lg font-bold py-2.5 px-4 rounded-xl transition-all duration-200 active:scale-95" href="https://www.hotstar.com" rel="noopener noreferrer" target="_blank">
+<span>Watch on JioHotstar</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================
+         SECTION 2: TRANSACTIONAL VOD (RENT OR BUY PLATFORMS)
+    ======================================================== -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-6 bg-secondary-container rounded-full"></span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Rent or Buy (TVOD)</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-label-sm font-label-sm text-secondary">3 PROVIDERS</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant hidden sm:block">No ongoing subscription required. On-demand cloud playback.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- CARD 1: APPLE TV / ITUNES -->
+<div class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/20 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:border-secondary-container/50 hover:shadow-xl group">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-black border border-white/10 flex items-center justify-center p-2 shadow-inner">
+<span class="material-symbols-outlined text-white text-[28px]" data-icon="desktop_mac">desktop_mac</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-secondary transition-colors">Apple TV</h3>
+<span class="text-body-sm font-body-sm text-on-surface-variant">iTunes Movie Store</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container/20 text-secondary border border-secondary-container/30">
+                Highest Bitrate
+              </span>
+</div>
+<!-- Price Structure -->
+<div class="bg-surface-container-high/60 p-3 rounded-xl flex items-center justify-around border border-outline-variant/20">
+<div class="text-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENT (48h)</span>
+<span class="text-headline-sm font-headline-sm text-on-surface font-bold">₹120</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">BUY (OWN)</span>
+<span class="text-headline-sm font-headline-sm text-secondary font-bold">₹490</span>
+</div>
+</div>
+<!-- Technical Badges -->
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">4K UHD</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">DOLBY VISION</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">DOLBY ATMOS</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-1 border-t border-outline-variant/10 pt-2">
+<p>Includes iTunes Extras &amp; Nolan Behind-The-Scenes commentary track.</p>
+</div>
+</div>
+<div class="pt-5">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-secondary-container hover:bg-secondary text-on-secondary-container font-label-lg font-bold py-2.5 px-4 rounded-xl transition-all duration-200 active:scale-95 shadow-md shadow-secondary-container/20" href="https://tv.apple.com" rel="noopener noreferrer" target="_blank">
+<span>Rent or Buy on Apple TV</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- CARD 2: GOOGLE TV / YOUTUBE MOVIES -->
+<div class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/20 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:border-secondary-container/50 hover:shadow-xl group">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#202124] border border-white/10 flex items-center justify-center p-2 shadow-inner">
+<span class="material-symbols-outlined text-secondary text-[26px]" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-secondary transition-colors">Google TV</h3>
+<span class="text-body-sm font-body-sm text-on-surface-variant">YouTube Movies</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant border border-outline-variant/30">
+                Instant Cloud Sync
+              </span>
+</div>
+<!-- Price Structure -->
+<div class="bg-surface-container-high/60 p-3 rounded-xl flex items-center justify-around border border-outline-variant/20">
+<div class="text-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENT (48h)</span>
+<span class="text-headline-sm font-headline-sm text-on-surface font-bold">₹100</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">BUY (OWN)</span>
+<span class="text-headline-sm font-headline-sm text-secondary font-bold">₹420</span>
+</div>
+</div>
+<!-- Technical Badges -->
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">HD 1080P</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">STEREO</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">FAMILY SHARING</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-1 border-t border-outline-variant/10 pt-2">
+<p>Watch across Google Chromecast, Android TV, or the YouTube iOS/Android app.</p>
+</div>
+</div>
+<div class="pt-5">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-bright hover:bg-surface-variant text-on-surface border border-outline-variant/40 hover:border-secondary font-label-lg font-bold py-2.5 px-4 rounded-xl transition-all duration-200 active:scale-95" href="https://play.google.com" rel="noopener noreferrer" target="_blank">
+<span>Rent on Google Play</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- CARD 3: BOOKMYSHOW STREAM -->
+<div class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/20 rounded-2xl p-5 flex flex-col justify-between transition-all duration-200 hover:border-secondary-container/50 hover:shadow-xl group">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#2b080a] border border-primary-container/30 flex items-center justify-center p-2 shadow-inner">
+<span class="material-symbols-outlined text-primary-container text-[24px]" data-icon="confirmation_number">confirmation_number</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">BMS Stream</h3>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Theatrical On-Demand</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant border border-outline-variant/30">
+                Regional Gateway
+              </span>
+</div>
+<!-- Price Structure -->
+<div class="bg-surface-container-high/60 p-3 rounded-xl flex items-center justify-around border border-outline-variant/20">
+<div class="text-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">RENT (30d/48h)</span>
+<span class="text-headline-sm font-headline-sm text-on-surface font-bold">₹119</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">BUY (OWN)</span>
+<span class="text-headline-sm font-headline-sm text-secondary font-bold">₹499</span>
+</div>
+</div>
+<!-- Technical Badges -->
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">1080P HD</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface border border-white/5 font-mono">5.1 SURROUND</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-1 border-t border-outline-variant/10 pt-2">
+<p>Redeemable via BookMyShow voucher credits and unified wallet balances.</p>
+</div>
+</div>
+<div class="pt-5">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-bright hover:bg-surface-variant text-on-surface border border-outline-variant/40 hover:border-primary font-label-lg font-bold py-2.5 px-4 rounded-xl transition-all duration-200 active:scale-95" href="https://in.bookmyshow.com" rel="noopener noreferrer" target="_blank">
+<span>Stream on BookMyShow</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================
+         FALLBACK AUDIT & LEGAL LICENSING DISCLAIMER
+    ======================================================== -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/20 flex items-start gap-3 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" data-icon="info">info</span>
+<p class="leading-relaxed">
+<strong class="text-on-surface font-semibold">Verification &amp; Catalogue Attribution:</strong> Verified through official streaming aggregators. Prices and catalogue availability last updated 12 mins ago. If a platform is not listed, this title is currently not licenced for streaming in your region. Audio codecs and HDR standards may depend on your local hardware device capabilities and TV manufacturer profiles.
+      </p>
+</div>
+<!-- ========================================================
+         RELATED / INCLUDED ON YOUR CONNECTED SERVICES
+         Horizontal Discover Carousel
+    ======================================================== -->
+<section class="space-y-4 pt-2">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Included on Your Connected Subscriptions</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Titles similar to Christopher Nolan’s Dark Knight Trilogy ready to stream</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- 4 Card Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Rec Card 1: Batman Begins -->
+<div class="group relative rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col transition-all duration-200 hover:-translate-y-1 hover:border-primary-container/50 hover:shadow-2xl">
+<div class="aspect-[2/3] w-full relative overflow-hidden bg-black">
+<img alt="Batman Begins poster" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Dark theatrical poster artwork for Batman Begins showing Bruce Wayne training in snowy Himalayan mountains with mystical ninjas, deep blue and obsidian lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqGgrI-zjv33E9-Xsp4kVTuyTmHSASeu4q_Mp0tRxXwggMpQnLNZG0bULCdghuG8r_Z9sbNS9TK0Hl3ULf8avnRocwg_vWmn3OKwsSWBn4BKbB7dK_Yqamg88c_8viX3NtN-PlAUwl_XW7PFCNgm5Rw0sF60lz9-7OVF16kRcBgGjMCsMpvZbaHfQlQRR9Srd69fenlD53djwOOLRYFJ40RE2RfUgvAQ8TnjBc-y_r"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md text-secondary text-label-sm font-label-sm font-bold flex items-center gap-1 border border-secondary/30">
+              ★ 8.2
+            </span>
+<div class="absolute bottom-2.5 left-2.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-red-600 text-white font-bold">Netflix</span>
+</div>
+</div>
+<div class="p-3.5 space-y-1 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface group-hover:text-primary transition-colors truncate">Batman Begins</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">2005 • Action, Crime</p>
+</div>
+<span class="text-label-sm font-label-sm text-emerald-400 font-semibold pt-1">Included with sub</span>
+</div>
+</div>
+<!-- Rec Card 2: Interstellar -->
+<div class="group relative rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col transition-all duration-200 hover:-translate-y-1 hover:border-primary-container/50 hover:shadow-2xl">
+<div class="aspect-[2/3] w-full relative overflow-hidden bg-black">
+<img alt="Interstellar poster" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Breathtaking deep space cinematic poster for Interstellar depicting an endurance spacecraft orbiting a luminous golden accretion disk of a massive gargantua black hole." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-bu4iq_hTXici3V-A_79z9dvbS37-mSf9CZx6C_vJmhCrQYIjzZ1wt_moyatpDhL5ompjBsAC4QtYyJxDohuIyWDG7NqdX7nunG-X3jUKkr7oGezBpgTvBOGG_b4L_AfQX6tdN_oYw9JqphZpv74Ao1l2CnV2HbR93n1Ig_Bi9d10y_yYVJuUeY6_L5wfGE9dbKIseMEGJT2cGcWtPvgGsByPlfXEdMoYySd-2bIR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md text-secondary text-label-sm font-label-sm font-bold flex items-center gap-1 border border-secondary/30">
+              ★ 8.7
+            </span>
+<div class="absolute bottom-2.5 left-2.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-[#00a8e1] text-black font-bold">Prime</span>
+</div>
+</div>
+<div class="p-3.5 space-y-1 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface group-hover:text-primary transition-colors truncate">Interstellar</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">2014 • Sci-Fi, Adventure</p>
+</div>
+<span class="text-label-sm font-label-sm text-emerald-400 font-semibold pt-1">Included with sub</span>
+</div>
+</div>
+<!-- Rec Card 3: Inception -->
+<div class="group relative rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col transition-all duration-200 hover:-translate-y-1 hover:border-primary-container/50 hover:shadow-2xl">
+<div class="aspect-[2/3] w-full relative overflow-hidden bg-black">
+<img alt="Inception poster" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Surreal cinematic movie poster for Inception featuring Paris streets bending backwards in zero-gravity with a team of dream architects in suits looking upwards in dramatic overcast dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQWkN6guQ8IH-3ggDQCexWOceUNOTDoV1attolV4kuIkVLQRCLnZbPBO5rhhPXhX-p4I7800HdRdMCqOsAOEda6ONuVrQtlsvgKbbwWpumHRJGPTHUg9IuKp0T9y31_A6CZ76zYplEHbZCtKQ1bfbsRKfZKYoOLl4liFjKYPUCm1JlP0InvLhH4K-PaALEA7-FV4u3Lk7-At9BbCN4QnHdl_zAXcyoCFZaTx2Wswn0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md text-secondary text-label-sm font-label-sm font-bold flex items-center gap-1 border border-secondary/30">
+              ★ 8.8
+            </span>
+<div class="absolute bottom-2.5 left-2.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-blue-600 text-white font-bold">JioHotstar</span>
+</div>
+</div>
+<div class="p-3.5 space-y-1 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface group-hover:text-primary transition-colors truncate">Inception</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">2010 • Sci-Fi, Action</p>
+</div>
+<span class="text-label-sm font-label-sm text-emerald-400 font-semibold pt-1">Included with sub</span>
+</div>
+</div>
+<!-- Rec Card 4: The Batman -->
+<div class="group relative rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col transition-all duration-200 hover:-translate-y-1 hover:border-primary-container/50 hover:shadow-2xl">
+<div class="aspect-[2/3] w-full relative overflow-hidden bg-black">
+<img alt="The Batman poster" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="High-contrast noir poster artwork for The Batman showing a detective vigilante silhouetted against glowing neon crimson flares and pouring rain in dark Gotham." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6NbYniMRWqcpeqKNa2MGA-gpQoWzMB4fhxmw1v9GBH1xRtjqokIMAxCwHlDgz1ay538urLqt8DA2G8TCgoIE5RxFZP4Lwa5iOSYjum_Y5lqLMQx8WnYukZveZ4Nuf1-rg0L7p_DG0MaxuHRdxvo3LTnI1Th8LUN1EKQWR0P9y6DlNW40FS0kYWX2z0O5yBS40KjLENfgFGf2npD9PtZvao-tO-xf83IR8U4dH0bQx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md text-secondary text-label-sm font-label-sm font-bold flex items-center gap-1 border border-secondary/30">
+              ★ 7.8
+            </span>
+<div class="absolute bottom-2.5 left-2.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-red-600 text-white font-bold">Netflix</span>
+</div>
+</div>
+<div class="p-3.5 space-y-1 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface group-hover:text-primary transition-colors truncate">The Batman</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">2022 • Crime, Mystery</p>
+</div>
+<span class="text-label-sm font-label-sm text-emerald-400 font-semibold pt-1">Included with sub</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================
+       FOOTER (SHARED COMPONENT JSON)
+  ======================================================== -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width border-t border-outline-variant/20 dark:border-outline-variant/20 flat no shadows mt-12">
+<div class="w-full max-w-7xl mx-auto px-gutter py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-lg">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start gap-1 text-center md:text-left">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="movie_filter" style="font-variation-settings: 'FILL' 1;">movie_filter</span>
+          CINEMIND
+        </span>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant max-w-md">
+          © 2025 CINEMIND Entertainment Inc. All rights reserved. Powered by TMDb &amp; Theatrical Motion Alliance.
+        </p>
+</div>
+<!-- Footer Navigation Links -->
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Partner Theatres</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Streaming Providers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">API &amp; Attribution</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Editorial Charter</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

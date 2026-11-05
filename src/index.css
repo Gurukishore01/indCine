@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #090b10;
+    --surface: #11151d;
+    --surface2: #171c26;
+    --line: #29313e;
+    --text: #f2f3f5;
+    --muted: #a1aab8;
+    --soft: #6f7b8d;
+    --red: #ff365d;
+    --gold: #f4bd62;
+    --teal: #51d6c2;
+    --blue: #7ca9ff;
+    --display: 'Plus Jakarta Sans', sans-serif;
+    --body: 'Manrope', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    font-size: 14px;
+    background-image:
+      radial-gradient(ellipse at 72% -12%, rgba(166, 29, 61, 0.17), transparent 42%),
+      radial-gradient(ellipse at 4% 48%, rgba(22, 108, 112, 0.25), transparent 28%),
+      linear-gradient(120deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(30deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: auto, auto, 38px 38px, 38px 38px;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #090b10;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #29313e;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #3d4a5d;
+}

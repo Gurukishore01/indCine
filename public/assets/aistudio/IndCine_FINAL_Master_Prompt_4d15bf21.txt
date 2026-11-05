@@ -1,0 +1,423 @@
+# FINAL MASTER PROMPT — INDCINE
+## Build a trustworthy, current Indian Cinema Intelligence Operating System
+
+Act as a principal product architect, senior full-stack engineer, data-quality engineer, AI orchestration specialist, product designer, and Indian cinema research analyst.
+
+I have uploaded the latest project archive: `indcine (1).zip`. This archive is the source of truth for the current application. It contains the current IndCine project and a nested original CINEMIND AIOS 4 archive. Inspect both archives and compare them before changing anything.
+
+The goal is to turn the current application into **IndCine — Indian Cinema Intelligence Operating System**: a personal, evidence-led system that helps me understand the current situation of Indian cinema across theatrical releases, OTT catalogues, audience/critic reception, public popularity signals, reported box office, industry developments and historical changes.
+
+This is not merely a movie recommendation website or a decorative dashboard. It must retrieve real information from permitted sources, preserve provenance, identify uncertainty, compare like with like, and never invent facts.
+
+---
+
+# 1. FIRST: COMPLETE PROJECT AUDIT — DO NOT SKIP
+
+Inspect the entire uploaded `indcine (1).zip`, including the nested original CINEMIND archive. Do not rely only on filenames or the earlier AI-generated descriptions.
+
+At minimum inspect:
+- `package.json`, lockfiles, `index.html`, `.env.example`, `tsconfig.json`
+- `src/index.css`, `src/App.tsx`, `src/types/aios.ts`
+- `src/components/layout/Shell.tsx`
+- all movie, dashboard and shared components
+- every page under `src/pages/`
+- `server.ts`
+- every file under `server/services/`
+- every file under `server/aios/` and `server/aios/agents/`
+- current observation/history files
+- all original CINEMIND 4 design references and source components in the nested archive.
+
+Produce an audit table with:
+1. File and function/component.
+2. What the code actually does.
+3. Whether it is working, partial, misleading, broken, or unverified.
+4. The concrete risk.
+5. The exact correction.
+6. A test that proves the correction.
+
+Do not claim that you have run a test unless you actually ran it. Do not claim a feature is live merely because a UI label or agent registry says so.
+
+Preserve useful working code. Do not delete or replace the project wholesale. Make changes incrementally and explain any unavoidable breaking changes.
+
+---
+
+# 2. CRITICAL DATA-QUALITY CORRECTIONS TO VERIFY AND FIX
+
+The following problems were identified during the previous source review. Re-open the exact current files and verify each one. Fix every confirmed defect.
+
+## 2.1 Dashboard metrics and false precision
+- In `server.ts`, `/api/pulse` was observed returning a hardcoded `evidenceConfidencePct: 94`. Remove any fabricated confidence percentage.
+- Do not count the number of providers returned by an agent as the number of platforms with verified catalogues. These are different measures.
+- Do not label a TMDB-configured key as a healthy/live source until a real request succeeds.
+- Distinguish configured, reachable, successful, stale, rate-limited, failed and unavailable source states.
+- Show the last successful retrieval time per source, not merely the time the dashboard endpoint was opened.
+- Never convert missing data to zero. Use null/unknown and explain why.
+
+## 2.2 Curated/seed data versus live data
+- Audit `server/services/indianCinemaData.ts` and `server/services/tmdbService.ts`.
+- Keep curated benchmark records only if they are clearly labelled as curated/demo/reference data with provenance.
+- Never merge static seed data into live TMDB trending results or describe it as live/verified.
+- A poster, movie title or valid TMDB ID does not verify box-office, review, OTT rights or performance claims.
+- Every field must carry its own provenance. A movie may have verified metadata but unverified box-office data.
+- Do not mark an entire movie record “verified” because one field has a source.
+
+## 2.3 Trend and historical observation engine
+Audit `server/services/observationStore.ts` in detail.
+
+Correct all of these rules:
+- Missing TMDB popularity remains null, never zero.
+- Do not infer official rank from an arbitrary array order.
+- Record rank only when the source explicitly provides a ranked list and the request context establishes that the ordering is the source ranking.
+- Identify the exact endpoint, source, territory/region, query parameters, metric, unit, collection method and retrieval time.
+- A global TMDB trending endpoint filtered by Indian original-language codes is NOT an India-region ranking. Label it accurately as a global source filtered by language.
+- Compare observations only when metric, source, region, endpoint/method, time window and units are compatible.
+- Keep rank movement and popularity-index movement as separate signals. Never combine conflicting metrics with a simplistic OR rule.
+- Require enough comparable observations and adequate time separation before using rising/falling/stable labels.
+- Distinguish “newly observed”, “not present in this source's current chart”, “rank moved down”, and “source metric declined”. Absence from a chart does not prove that total popularity or viewership declined.
+- Store immutable/append-only observations. Do not overwrite history.
+- Correct duplicate detection and ensure counters increment only after successful persistence.
+- Use deterministic, testable cadence rules. A short API throttle is not a daily historical collection scheduler.
+- Do not claim background monitoring unless a real scheduler is running in the deployment environment.
+- Explain that a local process cannot collect data while it is stopped.
+
+## 2.4 Agents and orchestrator
+Audit `server/aios/agentRegistry.ts`, `server/aios/orchestrator.ts` and every agent.
+
+- An agent must only be called implemented/active if it has a real implementation, actual invocation path, validated input/output, error handling and tests.
+- Do not mark every registry entry implemented by default.
+- Distinguish implemented, tested, planned, degraded, unavailable and failed.
+- Log an execution only when that agent actually executes.
+- Route only the agents relevant to the user's intent; do not invoke all agents for every question.
+- Show planned, running, completed, partial, failed and skipped honestly.
+- Avoid fabricated agent activity and decorative execution logs.
+- Add bounded retries, timeouts, concurrency limits and rate limits.
+- Ensure a failed agent does not cause unsupported claims in the final answer.
+
+## 2.5 Movie search and discovery
+- Title search must use the appropriate TMDB search endpoint.
+- Language/genre/year discovery must use the appropriate discover endpoint.
+- Do not silently broaden a requested language or region.
+- Validate TMDB response shapes and pagination.
+- If a Tamil comedy search returns no Tamil results, say no matching records were found. Do not quietly return Hindi or global films.
+- Do not run review/sentiment agents when discovery returns no valid movie records.
+- Make clear that TMDB original language is not always identical to all languages a film is dubbed into.
+
+## 2.6 Ratings, reviews and sentiment
+- Label TMDB community rating as TMDB rating, not IMDb, critic rating or a verified audience poll.
+- Preserve score scale, vote count, provider and retrieval time.
+- Do not map synopsis into critic consensus.
+- Separate audience ratings, user reviews, critic reviews, press coverage and AI-generated synthesis.
+- AI summaries are interpretations of retrieved samples, not independent sources.
+- Display review sample count, source coverage and collection date.
+- Never claim to analyse “all reviews on the internet”.
+- Do not imply a small sample represents all Indian audiences.
+- If review sources are unavailable, say so.
+
+## 2.7 OTT availability
+- Use TMDB watch-provider information only where the requested country/region is actually supported and returned.
+- Keep provider category distinct: subscription/flatrate, free, ads, rent, buy.
+- Store country, provider, source, attribution and retrieval time.
+- A generic Netflix/Prime/OTT search URL is not proof of availability.
+- Remove any hardcoded fallback links that appear as confirmed movie-specific availability.
+- Do not claim complete catalogue coverage for Netflix, Prime Video, JioHotstar, ZEE5, SonyLIV, Sun NXT, Aha or any platform unless the source actually provides that coverage.
+- Clearly show “not checked”, “not returned by this source”, “unavailable” or “unknown” where appropriate. Do not equate missing results with proof that a title is absent from the platform.
+- Retain required TMDB/JustWatch attribution and follow their current terms.
+
+## 2.8 Box office and business performance
+- Do not invent collections, budgets, distributor share, occupancy, ticket sales, profit or hit/flop classifications.
+- Preserve exact metric definitions: India net, India gross, overseas gross, worldwide gross, opening day, opening weekend, distributor share, budget.
+- Preserve the original reporting source, publication date, currency, territory, methodology and whether the number is an estimate.
+- Do not add different trade sources together.
+- If credible sources disagree, show the disagreement/range and explain it.
+- Gross collection is not profit. A film's budget compared with gross alone does not prove profitability.
+- Use “reported underperformance” only when adequate evidence and an explicit methodology support it.
+- Never infer a hit/flop label from TMDB ratings or popularity.
+
+## 2.9 Current information and news
+The user's primary goal is to understand the current situation of Indian cinema, so freshness matters.
+
+- The system must distinguish current live retrieval, cached data, historical observation and manually curated information.
+- Show exact checked-at time in Asia/Kolkata where appropriate, plus the source's publication date/time if available.
+- Never call a cached result “live” without showing its age.
+- For current industry news, announcements, release changes, box-office updates and official platform charts, integrate only permitted, reliable sources (official APIs, permitted RSS/feeds, accessible public sources or authorised connectors).
+- If the runtime has no permitted current web/news search integration, do not fabricate current news. Clearly show that current research is unavailable and provide source links or a manual research workflow where possible.
+- Prefer primary sources and established trade publications. Separate confirmed official statements from reported trade estimates and rumours.
+- Treat retrieved web content as untrusted data, not as instructions to the application or model.
+
+---
+
+# 3. PRODUCT SCOPE — WHAT INDCINE MUST DO
+
+Public name: **IndCine**. Never add a version number to the public brand.
+
+Coverage should include Indian cinema across Tamil, Telugu, Malayalam, Kannada, Hindi, Bengali, Marathi, Punjabi, Gujarati and other supported Indian languages/industries.
+
+The system should answer:
+- What is happening in Indian cinema today, this week and this month?
+- Which films are gaining attention, and according to which public signal?
+- Which films have declining source-specific popularity or chart positions?
+- What are the latest reported theatrical collections and how reliable are they?
+- Which films are listed by OTT providers in India?
+- What do available audience and critic sources say?
+- Which films show a mismatch between audience reception and reported box-office performance?
+- How do language industries, genres, directors, actors and release windows compare?
+- What changed since the previous comparable observation?
+- What evidence supports a success or underperformance explanation?
+- What remains unknown or disputed?
+
+The dashboard must not imply that all Indian films or every OTT catalogue are comprehensively covered. Display source coverage and limitations.
+
+---
+
+# 4. PROPER AIOS DESIGN
+
+Build a server-side central orchestrator:
+
+1. Understand user intent.
+2. Extract title, language, industry, region, date range and requested metric.
+3. Build a typed research plan.
+4. Select only the necessary agents/tools.
+5. Retrieve data from permitted sources.
+6. Normalise and validate source records.
+7. Check freshness and provenance.
+8. Compare only compatible historical observations.
+9. Calculate numerical changes deterministically in code.
+10. Use Gemini for evidence-grounded reasoning and synthesis.
+11. Validate each factual statement against evidence.
+12. Return answer, citations, source timestamps, confidence, disagreements and missing data.
+13. Persist eligible observations and execution audit logs.
+
+Use specialised agents as functional modules, not as marketing labels:
+- Indian Film Discovery & Metadata
+- Current Cinema News / Industry Research (only when an actual permitted current-search source is connected)
+- OTT Availability & Catalogue
+- Theatrical Box Office
+- Audience & Critic Reception
+- Popularity & Trend Analysis
+- Cross-film / Industry Comparison
+- Root Cause Analysis
+- Evidence Validation
+- Briefing & Report Generation
+
+Use deterministic code for retrieval, calculations, validation and storage. Gemini is the reasoning/synthesis layer, not the source of truth. If Gemini quota is exhausted, ordinary browsing, filtering and data display must still work.
+
+Root-cause analysis must separate:
+- verified facts,
+- source-reported explanations,
+- evidence-supported interpretations,
+- hypotheses,
+- unknown factors.
+
+Do not claim causation merely because two events happened together.
+
+---
+
+# 5. DATA MODEL AND EVIDENCE REQUIREMENTS
+
+Every material fact should be traceable to a source record.
+
+Store:
+- movie ID and title,
+- metric name and value,
+- unit and scale,
+- source name and exact source URL/identifier,
+- territory/region,
+- query/endpoint/method,
+- publication time where known,
+- retrieval time,
+- observation time,
+- sample count where relevant,
+- confidence/methodology,
+- whether the value is official, reported, estimated, derived, curated or unknown.
+
+Use field-level provenance. Do not attach one generic source to a whole movie object.
+
+Keep separate entities/tables/collections for:
+- movies and metadata,
+- provider availability,
+- ratings,
+- reviews and review samples,
+- box-office reports,
+- trend observations,
+- news/industry reports,
+- sources and evidence,
+- collection jobs,
+- agent executions,
+- generated reports,
+- watchlist/monitoring rules.
+
+Prefer append-only observation history. Do not overwrite previous values when new reports arrive. Handle source corrections as new versions/observations.
+
+Before selecting a persistence mechanism, verify the actual Google AI Studio/Cloud Run deployment filesystem and database capabilities. Do not promise durable storage if the environment is ephemeral. No paid database, paid hosting or paid billing. If durable free persistence is not available, clearly explain the limitation and support local/exportable history rather than pretending to have continuous monitoring.
+
+---
+
+# 6. METRICS AND CLASSIFICATION — NO MADE-UP SCORES
+
+Keep these dimensions separate:
+- TMDB popularity index,
+- source-specific chart position,
+- search interest (if permitted source available),
+- official platform chart appearance,
+- audience rating,
+- critic rating,
+- review sentiment sample,
+- reported box-office performance,
+- OTT availability,
+- evidence coverage/confidence.
+
+Do not combine these into one opaque “movie success score”.
+
+If you introduce any composite score, it must have:
+- published formula,
+- explicit weights,
+- source coverage,
+- time window,
+- missing-data treatment,
+- limitations,
+- reproducible calculation.
+
+Missing values are unknown/null, not zero. Never let missing data improve or reduce a score silently.
+
+Allowed status labels include:
+- Positive public signals
+- Mixed public signals
+- Declining source-specific signal
+- Strong audience reception (source/sample specified)
+- Mixed audience reception
+- Reported commercial underperformance (only with sufficient evidence)
+- Insufficient reliable data
+
+Do not label a movie hit, flop, blockbuster or commercial failure without adequate source-backed financial context.
+
+---
+
+# 7. DESIGN — MAKE IT PREMIUM, CINEMATIC AND CATCHY
+
+The user wants a more attractive, memorable, premium interface with the dramatic polish associated with major streaming-platform interfaces, while retaining the exact typography identity of CINEMIND AIOS 4.
+
+## Typography is non-negotiable
+Use the exact original CINEMIND AIOS 4 fonts:
+- **Plus Jakarta Sans** for headings/display.
+- **Manrope** for body and interface text.
+- **JetBrains Mono** for technical metadata, timestamps and numeric readouts.
+
+Use the actual font import and CSS variables from the original `src/index.css` and `index.html`. Preserve the original font weights and hierarchy. The original source components are the authority for font sizing. Do not substitute Barlow Condensed, DM Sans, IBM Plex Mono or another font.
+
+Do not blindly copy every old size into every new context; preserve the original sizing scale and visual rhythm, then apply it consistently to the expanded dashboard. Avoid making small metadata illegible.
+
+## Visual identity
+Retain the original CINEMIND 4 design foundation:
+- Background `#090b10`
+- Surface `#11151d`
+- Elevated surface `#171c26`
+- Border `#29313e`
+- Text `#f2f3f5`
+- Muted `#a1aab8`
+- Crimson `#ff365d`
+- Gold `#f4bd62`
+- Teal `#51d6c2`
+- Blue `#7ca9ff`
+- Original dark gradients, subtle grid/texture, restrained glow and cinematic layering.
+
+## Make the interface more attractive
+- Premium cinematic hero with strong visual storytelling.
+- Larger, more engaging movie artwork/poster compositions.
+- Rich but disciplined card depth and hierarchy.
+- Beautiful source-aware charts and timelines.
+- Elegant language/industry navigation.
+- A strong visual distinction between theatrical, OTT, audience, financial and news intelligence.
+- Carefully designed loading, empty, error, stale-data and unavailable states.
+- Smooth but restrained micro-interactions.
+- Responsive desktop/tablet/mobile layouts.
+- Avoid generic admin dashboard design.
+- Do not copy Netflix branding, logo, proprietary assets or claim to use Netflix's proprietary font. Use the original CINEMIND typography while achieving the polished cinematic visual quality the user likes.
+
+The dashboard should feel like a premium Indian cinema intelligence control room, not a plain collection of cards.
+
+---
+
+# 8. REQUIRED APPLICATION SCREENS
+
+1. **India Pulse** — current briefing, source freshness, language pulse, public trend signals, reported box office, OTT availability, audience reception, evidence alerts and recent research.
+2. **Film Explorer** — real search and filters for language, industry, genre, release year/date, provider, rating source and performance evidence.
+3. **Film Dossier** — full evidence-backed movie profile with source-by-source data, history and limitations.
+4. **OTT Radar** — provider availability/catalogue information for India, clearly showing source coverage and checked time.
+5. **Audience Lens** — audience/critic ratings, review samples, praise/criticism themes and source limitations.
+6. **Trend Observatory** — historical snapshots, comparable metrics and transparent movement.
+7. **Box Office Tracker** — exact reported collection types, source disagreements, budget context and publication dates.
+8. **AIOS Command Desk** — natural-language research with plan, actual agent execution, findings and evidence.
+9. **Intelligence Reports** — daily/weekly/monthly reports and historical comparisons with source lists.
+
+All navigation, filters, refresh controls, movie cards, query inputs and report actions must work. Do not leave decorative controls pretending to work.
+
+---
+
+# 9. API, SECURITY AND ZERO-COST RULES
+
+Strict ₹0 additional budget:
+- No paid API plans.
+- No paid hosting or database.
+- No credit-card activation.
+- No paid subscriptions.
+- No paid upgrades without explicit permission.
+
+Use `TMDB_API_KEY` and `GEMINI_API_KEY` only server-side, through the actual supported Google AI Studio Secrets/environment configuration. Never expose keys in frontend bundles, localStorage, console logs, reports, prompts or Git.
+
+TMDB can provide metadata, posters, discovery, TMDB community ratings/vote counts, supported trending data and supported regional watch-provider data. It does not provide complete OTT viewership, comprehensive reviews or authoritative box-office financials.
+
+Do not scrape behind logins/paywalls, bypass access controls, ignore robots policies or evade rate limits. Use permitted APIs, feeds and public sources.
+
+Add request validation, outbound URL safety, timeouts, bounded retries, rate limits and safe error messages.
+
+---
+
+# 10. REQUIRED TESTING
+
+Run and report actual results for:
+- `npm run lint`
+- `npm run build`
+- server startup and production start
+- API health and source reachability
+- missing/invalid TMDB key
+- missing/invalid Gemini key
+- TMDB timeout, rate limit and malformed response
+- exact language filtering and zero-result behaviour
+- seed/demo versus live data separation
+- null/missing metric handling
+- trend source/region/window mismatch
+- duplicate observation prevention
+- incompatible rank/popularity signals
+- OTT region/category handling
+- source disagreement display
+- no fabricated box-office or sentiment data
+- actual agent invocation and honest status
+- Gemini quota exhaustion fallback
+- responsive layout and keyboard accessibility.
+
+If dependencies are unavailable or a test cannot run, report that honestly. Do not claim success based on code inspection alone.
+
+---
+
+# 11. FINAL DELIVERY CHECKLIST
+
+Deliver:
+1. Complete source audit with file references.
+2. Confirmed defects and their fixes.
+3. Updated architecture diagram and agent status table.
+4. Updated UI and design system.
+5. List of changed files.
+6. Working features with proof/tests.
+7. Features not possible with current sources/free tier.
+8. Source coverage and data freshness policy.
+9. Actual build/lint/test output.
+10. Setup instructions and server-side secret configuration.
+11. Remaining risks and next steps.
+
+Do not say that all data is “100% perfect” or that every Indian movie is covered. No system can guarantee that. Instead, make each fact traceable, current where possible, independently checkable, and explicitly uncertain when sources are incomplete or disagree.
+
+## START NOW
+
+Inspect the uploaded `indcine (1).zip` and its nested CINEMIND AIOS 4 archive. Verify the code-level issues above. First return the audit and correction plan. Then implement the corrections and the premium redesigned interface while preserving the exact CINEMIND AIOS 4 typography. Prioritise data integrity and current-source freshness over decorative AI claims.
+
+The finished product must help me understand the real, evidence-backed current situation of Indian cinema—not merely generate convincing-sounding answers.

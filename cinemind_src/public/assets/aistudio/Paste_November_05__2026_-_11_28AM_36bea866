@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CINEMIND — The Dark Knight Details</title>
+<!-- Google Fonts: Space Grotesk & Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#35343a",
+            "secondary-container": "#ee9800",
+            "surface-bright": "#39383e",
+            "secondary": "#ffb95f",
+            "surface-container-highest": "#35343a",
+            "surface-container": "#1f1f25",
+            "primary-fixed-dim": "#ffb3b6",
+            "inverse-on-surface": "#303036",
+            "surface-container-high": "#2a292f",
+            "inverse-primary": "#be0037",
+            "on-primary-fixed-variant": "#920028",
+            "tertiary-container": "#007ca8",
+            "on-tertiary-fixed": "#001e2c",
+            "on-primary-fixed": "#40000c",
+            "error-container": "#93000a",
+            "on-secondary-fixed": "#2a1700",
+            "on-secondary-fixed-variant": "#653e00",
+            "surface-tint": "#ffb3b6",
+            "on-tertiary-container": "#f8fbff",
+            "on-primary-container": "#fffaf9",
+            "on-surface": "#e4e1e9",
+            "surface-container-lowest": "#0e0e13",
+            "primary-container": "#e11d48",
+            "surface-dim": "#131318",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#1b1b20",
+            "error": "#ffb4ab",
+            "tertiary": "#7bd0ff",
+            "on-secondary": "#472a00",
+            "secondary-fixed": "#ffddb8",
+            "background": "#131318",
+            "on-background": "#e4e1e9",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "outline": "#ac8889",
+            "inverse-surface": "#e4e1e9",
+            "on-error": "#690005",
+            "on-tertiary-fixed-variant": "#004c69",
+            "on-surface-variant": "#e5bdbe",
+            "surface": "#131318",
+            "on-tertiary": "#00354a",
+            "secondary-fixed-dim": "#ffb95f",
+            "tertiary-fixed": "#c4e7ff",
+            "on-secondary-container": "#5b3800",
+            "outline-variant": "#5c3f40",
+            "primary-fixed": "#ffdada",
+            "on-primary": "#68001a",
+            "primary": "#ffb3b6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "0.75rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.25rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Space Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "label-sm": ["Manrope"],
+            "body-md": ["Manrope"],
+            "label-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "headline-lg": ["Space Grotesk"],
+            "body-sm": ["Manrope"],
+            "display-hero-mobile": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0e0e13;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #35343a;
+      border-radius: 9999px;
+    }
+    .hero-mask {
+      background: radial-gradient(circle at 60% 30%, rgba(14, 14, 19, 0) 0%, rgba(14, 14, 19, 0.7) 60%, rgba(14, 14, 19, 1) 100%),
+                  linear-gradient(to bottom, rgba(14, 14, 19, 0.2) 0%, rgba(14, 14, 19, 0.85) 75%, rgba(14, 14, 19, 1) 100%);
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TOPNAVBAR (Shared Component Implementation) -->
+<header class="bg-surface-container-lowest/90 dark:bg-surface-container-lowest/90 backdrop-blur-md text-primary-container dark:text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant/20 dark:border-outline-variant/20 shadow-lg shadow-black/40">
+<div class="w-full px-gutter max-w-7xl mx-auto flex items-center justify-between h-16">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface flex items-center gap-2 transition-all duration-200 active:scale-95" href="#">
+<span class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-md shadow-primary-container/40">
+<span class="material-symbols-outlined text-lg" data-icon="movie" style="font-variation-settings: 'FILL' 1;">movie</span>
+</span>
+<span class="tracking-wider">CINEMIND</span>
+</a>
+<!-- Center Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary-container dark:text-primary font-label-lg border-b-2 border-primary-container dark:border-primary pb-1 transition-all duration-200" href="#">Discover</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">In Theatres</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">Where to Watch</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">Quick Pick</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">Watchlist</a>
+</nav>
+<!-- Right Interaction Hub -->
+<div class="flex items-center gap-3">
+<!-- Search Input Bar on right -->
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm pointer-events-none" data-icon="search">search</span>
+<input class="bg-surface-container-high/80 text-on-surface text-body-sm pl-9 pr-4 py-1.5 rounded-full border border-surface-variant/40 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all w-48 lg:w-60 placeholder:text-on-surface-variant/60" placeholder="Search titles, actors..." type="text"/>
+</div>
+<button aria-label="Notifications" class="p-2 text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full transition-all duration-200 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button aria-label="Bookmarks" class="p-2 text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full transition-all duration-200 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+</button>
+<a class="bg-primary-container text-on-primary-container font-label-lg px-4 py-2 rounded-full shadow-md shadow-primary-container/30 hover:brightness-110 active:scale-95 transition-all hidden sm:inline-flex items-center gap-1.5" href="#theatres">
+<span class="material-symbols-outlined text-sm" data-icon="confirmation_number">confirmation_number</span>
+<span>Get Tickets</span>
+</a>
+<!-- User Profile Avatar -->
+<button class="relative w-8 h-8 rounded-full overflow-hidden border border-outline-variant/30 hover:border-primary-container transition-all active:scale-95 ml-1">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="A portrait shot of a young professional film lover with warm ambient theater lighting illuminating the profile against a rich cinematic backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMX4MDxAU6BEPqQ39ZkxWxf61RCTyRz_mzV8_hBX1-4Y6Ps7Pi4_jUghGxOj7gOH3xF6cLPt0aTduzQup5IZnxD3pz28vb-3t22NVKAt2G60ooxd-7GX7fvgiugRrryyuNm5Nauit-q0ZwNIFiTMjs7GsnlgaK6aUdwqvpZiIrzBXjDtAnNiHqp_U0kKFxD_95MZ8WHd65ayQe91_M16O4VcqLgsyBxUAEpXvpYWl2"/>
+</button>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="w-full overflow-hidden">
+<!-- SUB-NAV / BREADCRUMB STRIP -->
+<div class="w-full max-w-7xl mx-auto px-gutter pt-4 pb-2 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high/60 border border-outline-variant/20 text-on-surface-variant hover:text-on-surface text-label-md transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="arrow_back">arrow_back</span>
+<span>Back to Movies</span>
+</a>
+<div class="flex items-center gap-2 text-label-sm text-on-surface-variant">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span>LIVE IN THEATRES &amp; 4K STREAMING</span>
+</div>
+</div>
+<!-- IMMERSIVE PANORAMIC HERO SECTION -->
+<section class="relative w-full min-h-[640px] lg:min-h-[720px] flex items-end pb-12 overflow-hidden">
+<!-- Panoramic Backdrop Image -->
+<div class="absolute inset-0 z-0">
+<img alt="The Dark Knight Hero Scene" class="w-full h-full object-cover object-center filter brightness-[0.78]" data-alt="A sweeping, cinematic widescreen panoramic shot of a dark night cityscape with stormy clouds, neon reflections, and an iconic vigilante standing atop a gothic skyscraper looking over the moody streets. The color grading balances deep inky obsidian with luminous amber streetlights and flashes of electric blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcuE_FDxq2LK4dL9GJt82fLfvqZkl7iYnhNCU481ttpZpwjfDm5oBSTfTCSRIm2cnyVTamvbMaERf8GVCFZNOORwK2CSgJhUuWgoTp9KxyBfQ_pF93ENlYftzS9gkpaJeKyV7umo_jTrHSE7eBEYkVLMpHIxxDeFW41CespJFCVYK2J34-R5ymmfBCBwS-aTStITcM_ZGhuTX7rGhJjgUxX7c_4BTCQP3_cjUIqk9W"/>
+<!-- Gradient Layers for legibility & theatrical depth -->
+<div class="absolute inset-0 hero-mask"></div>
+</div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full max-w-7xl mx-auto px-gutter flex flex-col lg:flex-row items-end lg:items-center gap-8">
+<!-- Left: Poster Column & Ratings Card -->
+<div class="w-full sm:w-64 lg:w-72 flex-shrink-0 flex flex-col items-center">
+<div class="relative group w-full aspect-[2/3] rounded-2xl overflow-hidden shadow-2xl shadow-black/90 border border-outline-variant/30 transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="The Dark Knight Movie Poster" class="w-full h-full object-cover" data-alt="Official high-resolution movie poster featuring the caped crusader in dramatic chiaroscuro lighting, with dark brooding tones, explosive amber sparks, and bold cinematic composition, set in a rain-soaked metropolis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbnz8a4Jqk5NK9rWJBI2MpvbhGOYSIwSywfPfKraEUC0hekxR-Am3xNz7mHp9Hq26aQtXoj88XA8SrwG_-m_g1gx6U3qzBmU0sy_ILmPVJZhp7O6tCsoTKSmdOUHKqsrnWS8YefjlMmGGqJsEirV-wYBvmeRWjmA4eppoxJECQBLl3wrhlb7B30wzieLV4221GrSBJ2wXavgoMxk3QTkD_BCvvrzfRDTN95CJYeSAY"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10 text-label-sm text-on-surface tracking-wider font-bold">
+              U/A 16+
+            </div>
+<div class="absolute top-3 right-3 bg-secondary-container/90 text-on-secondary-container px-2 py-0.5 rounded-full text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>9.0</span>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-transparent flex items-center justify-around text-center text-label-xs">
+<div>
+<span class="block text-error text-label-md font-bold">94%</span>
+<span class="text-body-sm text-on-surface-variant text-[10px]">Rotten Tomatoes</span>
+</div>
+<div class="w-px h-6 bg-outline-variant/30"></div>
+<div>
+<span class="block text-secondary text-label-md font-bold">94%</span>
+<span class="text-body-sm text-on-surface-variant text-[10px]">Audience Score</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Titles, Metadata & Action Hub -->
+<div class="flex-1 w-full flex flex-col gap-4 text-left">
+<!-- Category & Quick Badges -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-primary-container/20 text-primary border border-primary-container/30 px-3 py-1 rounded-full text-label-sm font-bold tracking-wider">
+              CRITICS' MASTERPIECE
+            </span>
+<span class="bg-surface-container-high/80 text-on-surface px-3 py-1 rounded-full text-label-sm border border-outline-variant/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="schedule">schedule</span>
+              2h 32m
+            </span>
+<span class="bg-surface-container-high/80 text-on-surface px-3 py-1 rounded-full text-label-sm border border-outline-variant/20">
+              2008
+            </span>
+<span class="bg-surface-container-high/80 text-secondary border border-secondary/20 px-3 py-1 rounded-full text-label-sm font-bold">
+              IMAX Remastered
+            </span>
+</div>
+<!-- Majestic Title -->
+<h1 class="text-display-hero font-display-hero text-on-surface uppercase tracking-tight drop-shadow-md">
+            The Dark Knight
+          </h1>
+<!-- Genre Tags -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest/60 text-on-surface text-label-md border border-outline-variant/20">Action</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest/60 text-on-surface text-label-md border border-outline-variant/20">Crime</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest/60 text-on-surface text-label-md border border-outline-variant/20">Psychological Thriller</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest/60 text-on-surface text-label-md border border-outline-variant/20">Drama</span>
+</div>
+<!-- Directors & Key Crew Tagline -->
+<div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-body-sm text-on-surface-variant pt-1">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-semibold">Director:</span>
+<span class="text-primary hover:underline cursor-pointer">Christopher Nolan</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-semibold">Writers:</span>
+<span>Jonathan Nolan, David S. Goyer, Christopher Nolan</span>
+</div>
+</div>
+<!-- PRIMARY ACTION HUB -->
+<div class="pt-4 flex flex-wrap items-center gap-3">
+<!-- Book Tickets in Theatres (Primary Amber) -->
+<a class="bg-secondary-container text-on-secondary-container font-label-lg px-6 py-3 rounded-full flex items-center gap-2 shadow-lg shadow-secondary-container/30 hover:brightness-110 active:scale-95 transition-all font-bold" href="#booking">
+<span class="material-symbols-outlined" data-icon="local_activity">local_activity</span>
+<span>Book Cinema Tickets</span>
+</a>
+<!-- Where to Watch (Streaming Hub Crimson) -->
+<a class="bg-primary-container text-on-primary-container font-label-lg px-6 py-3 rounded-full flex items-center gap-2 shadow-lg shadow-primary-container/30 hover:brightness-110 active:scale-95 transition-all" href="#streaming">
+<span class="material-symbols-outlined" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Where to Watch</span>
+</a>
+<!-- Watch Trailer (Ghost Glass) -->
+<button class="bg-surface-container-high/80 text-on-surface font-label-lg px-5 py-3 rounded-full border border-outline-variant/30 flex items-center gap-2 hover:bg-surface-container-highest transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="smart_display">smart_display</span>
+<span>Watch Trailer</span>
+</button>
+<!-- Bookmark / Watchlist Pill -->
+<button class="p-3 bg-surface-container-high/80 text-on-surface rounded-full border border-outline-variant/30 hover:text-primary transition-all active:scale-95 flex items-center justify-center" title="Save to Watchlist">
+<span class="material-symbols-outlined" data-icon="bookmark_add">bookmark_add</span>
+</button>
+<!-- Share Button -->
+<button class="p-3 bg-surface-container-high/80 text-on-surface rounded-full border border-outline-variant/30 hover:text-primary transition-all active:scale-95 flex items-center justify-center" title="Share Title">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTENT BODY CONTAINER: 12-COLUMN DESKTOP GRID -->
+<div class="w-full max-w-7xl mx-auto px-gutter py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- MAIN COLUMN (8 Columns) -->
+<div class="lg:col-span-8 flex flex-col gap-10">
+<!-- SYNOPSIS & STORYLINE -->
+<section class="bg-surface-container-low p-6 sm:p-8 rounded-2xl border border-outline-variant/20 shadow-sm">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/10">
+<h2 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+              Storyline &amp; Overview
+            </h2>
+<span class="text-label-sm text-on-surface-variant uppercase tracking-wider">Warner Bros. Pictures</span>
+</div>
+<div class="pt-4 text-body-lg text-on-surface/90 leading-relaxed space-y-3">
+<p>
+              When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice. With the help of allies Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets.
+            </p>
+<p class="text-on-surface-variant text-body-md">
+              The partnership proves to be effective, but they soon find themselves prey to a reign of terror unleashed by a rising criminal mastermind who pushes Gotham City into complete anarchy.
+            </p>
+</div>
+<!-- Technical Specs Badges -->
+<div class="mt-6 pt-4 border-t border-outline-variant/10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+<div class="bg-surface-container/60 p-3 rounded-xl border border-outline-variant/10">
+<span class="block text-label-sm text-on-surface-variant">Aspect Ratio</span>
+<span class="font-headline-sm text-on-surface">1.43 : 1 IMAX</span>
+</div>
+<div class="bg-surface-container/60 p-3 rounded-xl border border-outline-variant/10">
+<span class="block text-label-sm text-on-surface-variant">Audio Format</span>
+<span class="font-headline-sm text-on-surface">Dolby Atmos</span>
+</div>
+<div class="bg-surface-container/60 p-3 rounded-xl border border-outline-variant/10">
+<span class="block text-label-sm text-on-surface-variant">Filming Mode</span>
+<span class="font-headline-sm text-on-surface">65mm IMAX</span>
+</div>
+<div class="bg-surface-container/60 p-3 rounded-xl border border-outline-variant/10">
+<span class="block text-label-sm text-on-surface-variant">Box Office</span>
+<span class="font-headline-sm text-secondary">$1.006 Billion</span>
+</div>
+</div>
+</section>
+<!-- WHERE TO WATCH / STREAMING AGGREGATOR SECTION -->
+<section class="bg-surface-container-low p-6 sm:p-8 rounded-2xl border border-outline-variant/20" id="streaming">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/10">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="tv">tv</span>
+                Where to Watch
+              </h2>
+<p class="text-body-sm text-on-surface-variant pt-0.5">Real-time availability and provider verified streams</p>
+</div>
+<span class="text-label-sm bg-surface-container-highest text-on-surface px-3 py-1 rounded-full border border-outline-variant/20">United States (EN)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 pt-6">
+<!-- Provider 1: HBO Max -->
+<div class="bg-surface-container hover:bg-surface-container-high transition-all p-4 rounded-xl border border-outline-variant/20 flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-[#5822b4] flex items-center justify-center font-bold text-white tracking-tighter text-xs shadow-md">
+                  MAX
+                </div>
+<span class="text-label-sm bg-primary-container/20 text-primary px-2 py-0.5 rounded-full">Included</span>
+</div>
+<div class="pt-4">
+<h4 class="font-headline-sm text-on-surface text-sm">HBO Max</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">4K UHD • HDR10</p>
+</div>
+<button class="mt-3 w-full py-1.5 rounded-full bg-surface-variant/40 hover:bg-surface-variant text-on-surface text-label-sm font-semibold transition-all">
+                Stream Now
+              </button>
+</div>
+<!-- Provider 2: Netflix -->
+<div class="bg-surface-container hover:bg-surface-container-high transition-all p-4 rounded-xl border border-outline-variant/20 flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-[#e50914] flex items-center justify-center font-extrabold text-white text-base shadow-md">
+                  N
+                </div>
+<span class="text-label-sm bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded-full">Subscription</span>
+</div>
+<div class="pt-4">
+<h4 class="font-headline-sm text-on-surface text-sm">Netflix</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">HD • 5.1 Surround</p>
+</div>
+<button class="mt-3 w-full py-1.5 rounded-full bg-surface-variant/40 hover:bg-surface-variant text-on-surface text-label-sm font-semibold transition-all">
+                Stream Now
+              </button>
+</div>
+<!-- Provider 3: Prime Video -->
+<div class="bg-surface-container hover:bg-surface-container-high transition-all p-4 rounded-xl border border-outline-variant/20 flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-[#00a8e1] flex items-center justify-center font-bold text-white text-xs shadow-md">
+                  prime
+                </div>
+<span class="text-label-sm bg-secondary-container/20 text-secondary px-2 py-0.5 rounded-full">Rent $3.99</span>
+</div>
+<div class="pt-4">
+<h4 class="font-headline-sm text-on-surface text-sm">Prime Video</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">4K • UHD • Dolby</p>
+</div>
+<button class="mt-3 w-full py-1.5 rounded-full bg-surface-variant/40 hover:bg-surface-variant text-on-surface text-label-sm font-semibold transition-all">
+                Rent / Buy
+              </button>
+</div>
+<!-- Provider 4: Apple TV -->
+<div class="bg-surface-container hover:bg-surface-container-high transition-all p-4 rounded-xl border border-outline-variant/20 flex flex-col justify-between group">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-bright flex items-center justify-center font-bold text-white text-xs shadow-md">
+<span class="material-symbols-outlined text-lg" data-icon="tv">tv</span>
+</div>
+<span class="text-label-sm bg-secondary-container/20 text-secondary px-2 py-0.5 rounded-full">Buy $9.99</span>
+</div>
+<div class="pt-4">
+<h4 class="font-headline-sm text-on-surface text-sm">Apple TV</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">Dolby Vision • Atmos</p>
+</div>
+<button class="mt-3 w-full py-1.5 rounded-full bg-surface-variant/40 hover:bg-surface-variant text-on-surface text-label-sm font-semibold transition-all">
+                Purchase
+              </button>
+</div>
+</div>
+</section>
+<!-- TOP BILLED CAST & CREW (Horizontal Gallery) -->
+<section class="bg-surface-container-low p-6 sm:p-8 rounded-2xl border border-outline-variant/20">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/10">
+<h2 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="group">group</span>
+              Top Cast &amp; Crew
+            </h2>
+<a class="text-label-md text-primary hover:underline" href="#">Full 54 Credits</a>
+</div>
+<div class="flex gap-4 overflow-x-auto pt-6 pb-2 custom-scrollbar">
+<!-- Cast 1 -->
+<div class="flex-shrink-0 w-36 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-2 border-outline-variant/30 group-hover:border-primary-container transition-all shadow-md">
+<img alt="Christian Bale" class="w-full h-full object-cover" data-alt="Intense close-up headshot portrait of Christian Bale with sophisticated natural cinema lighting against an understated dark charcoal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHoyFGnmubhTYqs-u78-hjcurGpizrmbfOxPrYmuByjgqPOeoUdIb-uLiHLtr_68U4v__oPbd0W9ImMblT8VPNJIPTe6MUiynPSFiZRUg44qpySwv0Z2E-6gkO8ZBP_AEDzX7wbVnxL86fdixtJwW9ycgB6Q05Rccw17hNBEzCNxiW0rbtOwE-5nHE2V8cr76ibn5sNOFVJ4cCTSY6mDrVYfERAdOWbVg7FSgW5tiI"/>
+</div>
+<h4 class="font-label-lg text-on-surface pt-3 text-sm group-hover:text-primary transition-colors">Christian Bale</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">Bruce Wayne / Batman</p>
+</div>
+<!-- Cast 2 -->
+<div class="flex-shrink-0 w-36 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-2 border-outline-variant/30 group-hover:border-primary-container transition-all shadow-md">
+<img alt="Heath Ledger" class="w-full h-full object-cover" data-alt="Dramatic high-contrast cinema studio portrait of Heath Ledger with brooding intensity and soft moody illumination on dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCwDpddf74r3-EtO4ObB0bWKiQKJWzDFWBG8dWnBHPw7VhQN9LaT_qG8ighAAUxBNy4tCGVThwIDOf7UKdULGursxYtVa3oN8A1YoEgo67pHvLWwAJ2IWOJnW-SANQZWReD_eq_l5BZxJWrDV28fl6eJjCU9yKHtxGY2h8VcqnALjCInkZ8qq9P7xk5xiQoU7m4wVe34cr7KFQKLKleXuP7SbDoPBDSOOpSnP3Ho2l"/>
+</div>
+<h4 class="font-label-lg text-on-surface pt-3 text-sm group-hover:text-primary transition-colors">Heath Ledger</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">Joker</p>
+</div>
+<!-- Cast 3 -->
+<div class="flex-shrink-0 w-36 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-2 border-outline-variant/30 group-hover:border-primary-container transition-all shadow-md">
+<img alt="Gary Oldman" class="w-full h-full object-cover" data-alt="Distinguished professional portrait of Gary Oldman in sharp focus, backlit with soft rim illumination in a premier dark studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB893ROMSsqAW_E59TEvJY7Ya5TQMx3VyDZtijuAfSI3OgJJPKfLZb2WDPC3f2XTiMkkvn3hW5xtczokq2uGgDHsvxyLZNn6W5URScs_qC6LUc-2f-SR9AoUH1n6nytapjKa04f8WYrPWH4mbcWFnFPMl0j5N7aFBGheHbTy_AUua163DDDhXQUgZKRPAOs4nfcJsXfFVzbSkIpb_P76_o6zOJfsDomEnFP5t1irp2"/>
+</div>
+<h4 class="font-label-lg text-on-surface pt-3 text-sm group-hover:text-primary transition-colors">Gary Oldman</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">Lt. James Gordon</p>
+</div>
+<!-- Cast 4 -->
+<div class="flex-shrink-0 w-36 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-2 border-outline-variant/30 group-hover:border-primary-container transition-all shadow-md">
+<img alt="Michael Caine" class="w-full h-full object-cover" data-alt="Refined close-up profile portrait of Michael Caine with gentle lighting, warm amber tint, and dark cinematic background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9LxyCBqeWncBSiVxSyRXU8EZIGqoQqbE_qY2pV29ncGEblpbM-7vnon-bejAYXCW2crqfOuUsQ9-4YlSYIUgvQbF4JlDwXXYo9fW8KZVARei90b5GXRur5fYh7zWpz44TdpdCbSL53vLSwsg3XiGEt8vqzRxnf480DtJNCYbPYM8gkXxBCueWXMYYYHItlleP_IxuhaVvqaemMQ4TyRvWkmbSBoOEB2qKhgN61pkc"/>
+</div>
+<h4 class="font-label-lg text-on-surface pt-3 text-sm group-hover:text-primary transition-colors">Michael Caine</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">Alfred Pennyworth</p>
+</div>
+<!-- Cast 5 -->
+<div class="flex-shrink-0 w-36 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-2 border-outline-variant/30 group-hover:border-primary-container transition-all shadow-md">
+<img alt="Aaron Eckhart" class="w-full h-full object-cover" data-alt="Cinematic headshot portrait of Aaron Eckhart with focused theatrical lighting creating realistic skin tones and soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-HuGIvdKK6Hju0FaAZxggxE1d3moXGgqpdAU_oGxzr2D4Hr4S7JpYW3qbIGNYQ_d9sOBoWIl08cehtF0eoEhtUXiyH-532woLQhg4vs-xD4_iTapP1E6c4EEM5zx01JUwXH6ybbsTV6UBmFnliy6cCekGNbhm93B-D-xPXFeg1NzfXKPpOUtBfkJyyQP3IeSjLQxiBuLHWo3dbjUCbcHaaZ6nbUaKDs0qWbHbx_Xs"/>
+</div>
+<h4 class="font-label-lg text-on-surface pt-3 text-sm group-hover:text-primary transition-colors">Aaron Eckhart</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">Harvey Dent</p>
+</div>
+<!-- Cast 6 -->
+<div class="flex-shrink-0 w-36 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-24 h-24 rounded-full overflow-hidden border-2 border-outline-variant/30 group-hover:border-primary-container transition-all shadow-md">
+<img alt="Morgan Freeman" class="w-full h-full object-cover" data-alt="Charismatic portrait of Morgan Freeman with soft overhead spotlighting in an elegant obsidian cinematic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsoTbwqAo47oPO3NMVOCIU-_84cQ4fDWwGIWovLHR-9eZDrXO-wOzBGiY6xpMYqYtqQCZlj8T6Ph8k8Q2Nxax-lR2A9pbPgYy8ON7H_cwlKjeHPGNVrEKQBxLZJdJ7xgR0Uw_-i99sEshCmIbDg9dijrV9yIBIWx9x9ZLE77yEAi-6-K2u9ctvCVonp2JoMBbdZSdoC3c7R3uaMKT3sYjG4N_CsmsWjVibYVQN1acm"/>
+</div>
+<h4 class="font-label-lg text-on-surface pt-3 text-sm group-hover:text-primary transition-colors">Morgan Freeman</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">Lucius Fox</p>
+</div>
+</div>
+</section>
+<!-- AUDIENCE & CRITICS CONSENSUS -->
+<section class="bg-surface-container-low p-6 sm:p-8 rounded-2xl border border-outline-variant/20">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-outline-variant/10 gap-2">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="reviews">reviews</span>
+                Consensus &amp; Critical Acclaim
+              </h2>
+<p class="text-body-sm text-on-surface-variant">Aggregated from 348 verified top film critics worldwide</p>
+</div>
+<div class="flex items-center gap-1 text-secondary text-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Certified Fresh</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6">
+<!-- Review Card 1 -->
+<div class="bg-surface-container p-5 rounded-xl border border-outline-variant/15 flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-xs text-primary">NYT</span>
+<div>
+<h5 class="text-label-md text-on-surface">The New York Times</h5>
+<span class="text-body-sm text-on-surface-variant text-[11px]">Manohla Dargis</span>
+</div>
+</div>
+<div class="flex text-secondary text-xs">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-body-md text-on-surface/90 italic">
+                  "Pitched at the divide between art and industry, poetry and entertainment, The Dark Knight goes darker and deeper than any Hollywood movie of its comic-book genre."
+                </p>
+</div>
+<span class="text-label-sm text-on-surface-variant/60 pt-3 block">Published July 2008</span>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-container p-5 rounded-xl border border-outline-variant/15 flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-xs text-secondary">RS</span>
+<div>
+<h5 class="text-label-md text-on-surface">Rolling Stone</h5>
+<span class="text-body-sm text-on-surface-variant text-[11px]">Peter Travers</span>
+</div>
+</div>
+<div class="flex text-secondary text-xs">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-body-md text-on-surface/90 italic">
+                  "I can only speak superlatives of Ledger, who is mad-genius stupendous. He makes Joker a creature of shocking immediacy and raw psychological terror."
+                </p>
+</div>
+<span class="text-label-sm text-on-surface-variant/60 pt-3 block">Published July 2008</span>
+</div>
+</div>
+</section>
+</div>
+<!-- SIDEBAR COLUMN (4 Columns): THEATRICAL SHOWTIMES & SEAT PICKER ACCESS -->
+<aside class="lg:col-span-4 flex flex-col gap-6" id="booking">
+<!-- Live Theatres Box -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/20 shadow-lg">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/10">
+<h3 class="font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="theater_comedy">theater_comedy</span>
+              Screenings Nearby
+            </h3>
+<span class="text-label-sm text-primary font-bold">Today</span>
+</div>
+<!-- Theatre 1 -->
+<div class="mt-4 p-4 rounded-xl bg-surface-container border border-outline-variant/20">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-label-lg text-on-surface">AMC Empire 25 IMAX</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">234 W 42nd St • 0.8 miles away</p>
+</div>
+<span class="text-label-sm bg-surface-bright text-on-surface px-2 py-0.5 rounded">Laser 70mm</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-3">
+<button class="px-3 py-1.5 rounded-lg bg-surface-variant/70 hover:bg-secondary-container hover:text-on-secondary-container transition-all text-label-sm font-bold text-on-surface">
+                4:30 PM
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-secondary-container text-on-secondary-container text-label-sm font-bold shadow-md shadow-secondary-container/20">
+                7:15 PM
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-variant/70 hover:bg-secondary-container hover:text-on-secondary-container transition-all text-label-sm font-bold text-on-surface">
+                10:00 PM
+              </button>
+</div>
+</div>
+<!-- Theatre 2 -->
+<div class="mt-3 p-4 rounded-xl bg-surface-container border border-outline-variant/20">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-label-lg text-on-surface">Regal Union Square ScreenX</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">850 Broadway • 1.4 miles away</p>
+</div>
+<span class="text-label-sm bg-surface-bright text-on-surface px-2 py-0.5 rounded">Dolby Atmos</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-3">
+<button class="px-3 py-1.5 rounded-lg bg-surface-variant/70 hover:bg-secondary-container hover:text-on-secondary-container transition-all text-label-sm font-bold text-on-surface">
+                5:00 PM
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-variant/70 hover:bg-secondary-container hover:text-on-secondary-container transition-all text-label-sm font-bold text-on-surface">
+                8:45 PM
+              </button>
+</div>
+</div>
+<!-- Interactive Seat Picker Preview Strip -->
+<div class="mt-5 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/15 text-center">
+<div class="text-label-sm text-on-surface-variant mb-2">Auditorium Screen Preview</div>
+<div class="w-full h-1.5 bg-gradient-to-r from-transparent via-primary-container to-transparent rounded-full mb-3"></div>
+<div class="flex justify-center gap-1.5 mb-2">
+<span class="w-3 h-3 rounded-t-sm bg-surface-variant/40"></span>
+<span class="w-3 h-3 rounded-t-sm bg-surface-variant/40"></span>
+<span class="w-3 h-3 rounded-t-sm bg-secondary-container ring-2 ring-secondary/50"></span>
+<span class="w-3 h-3 rounded-t-sm bg-secondary-container ring-2 ring-secondary/50"></span>
+<span class="w-3 h-3 rounded-t-sm bg-surface-variant/40"></span>
+<span class="w-3 h-3 rounded-t-sm bg-primary-container"></span>
+<span class="w-3 h-3 rounded-t-sm bg-primary-container"></span>
+</div>
+<div class="flex items-center justify-center gap-4 text-[10px] text-on-surface-variant pt-2">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-surface-variant/40"></span> Available</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-secondary-container"></span> Selected</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-primary-container"></span> Sold Out</span>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-full bg-secondary-container hover:bg-secondary text-on-secondary-container font-label-md font-bold tracking-wide transition-all shadow-md">
+              Select Seats &amp; Reserve ($18.50)
+            </button>
+</div>
+</div>
+<!-- Cinema Experience Metric Meter -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/20">
+<h4 class="font-headline-sm text-on-surface text-base mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="speed">speed</span>
+            Cinematic Vitality Index
+          </h4>
+<div class="space-y-3">
+<div>
+<div class="flex justify-between text-body-sm mb-1">
+<span class="text-on-surface">Direction &amp; Pacing</span>
+<span class="text-primary font-bold">98%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 98%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm mb-1">
+<span class="text-on-surface">Acting &amp; Performance</span>
+<span class="text-secondary font-bold">100%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm mb-1">
+<span class="text-on-surface">Sound Design &amp; Score</span>
+<span class="text-primary font-bold">96%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 96%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm mb-1">
+<span class="text-on-surface">Re-watchability Factor</span>
+<span class="text-secondary font-bold">95%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- MORE LIKE THIS (RECOMMENDED CINEMA GRID) -->
+<section class="w-full max-w-7xl mx-auto px-gutter py-12 border-t border-outline-variant/15">
+<div class="flex items-center justify-between pb-6">
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface">More Like This</h2>
+<p class="text-body-sm text-on-surface-variant">Recommended based on psychological thrillers, neo-noir realism, and director Christopher Nolan</p>
+</div>
+<a class="text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>View All 24</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<!-- Rec Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[2/3] rounded-xl overflow-hidden border border-outline-variant/20 shadow-md group-hover:border-primary-container group-hover:scale-105 transition-all duration-300">
+<img alt="Inception" class="w-full h-full object-cover" data-alt="High-concept movie poster for Inception showing rotating city streets folding into the sky with dreamlike noir cinematic mood and bold composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVx9CrgcPukXkI5Saoh17k6IKGf7BV8roXc0aNKNArw7zjwXlMh8DrclrF2pUEaNAaCkIr1E5x-9xkI62dp2crv4Z_X97JOV-mjaIoblSdv4jUMrIt6MtysLbbL_KHSLxl9q6hRRqV96bj9KHzRaedF---m9lFchlB9I098QYeMPRNOGdGXQ0f_sAB4VGQwntWfTBPJ63HR_DqdR719dlyR3UBXLFRjdo_Jdsry9DP"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/80 text-secondary px-1.5 py-0.5 rounded text-[11px] font-bold">★ 8.8</div>
+</div>
+<h4 class="font-label-md text-on-surface pt-2 truncate group-hover:text-primary transition-colors">Inception</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">2010 • Sci-Fi / Heist</p>
+</div>
+<!-- Rec Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[2/3] rounded-xl overflow-hidden border border-outline-variant/20 shadow-md group-hover:border-primary-container group-hover:scale-105 transition-all duration-300">
+<img alt="Interstellar" class="w-full h-full object-cover" data-alt="Cinematic movie poster for Interstellar depicting an astronaut in a vast frozen cosmic tundra with deep space celestial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQwUbflblbnD1RWRkFJ65CTjBF7lHrp7cbhQ30K5WfxTJJYqQNTeWVCFyaOar4Y2QHFNQbur6YfjXuEzS_KoJMVZ0py1rMIVHwFgcN-hbTVytGO0f8EeoQgIhmdkBy-SyZps__vmJoXf15hnWsVqmxKqvvV-s3vo6ANp5QAH0TRR95WEyY3F9h1C1FKyUHpZzW9r5CAYqRbMU9NvAXE449uAYbgQ_DJXM34MbZuZaV"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/80 text-secondary px-1.5 py-0.5 rounded text-[11px] font-bold">★ 8.7</div>
+</div>
+<h4 class="font-label-md text-on-surface pt-2 truncate group-hover:text-primary transition-colors">Interstellar</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">2014 • Adventure / Sci-Fi</p>
+</div>
+<!-- Rec Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[2/3] rounded-xl overflow-hidden border border-outline-variant/20 shadow-md group-hover:border-primary-container group-hover:scale-105 transition-all duration-300">
+<img alt="The Batman" class="w-full h-full object-cover" data-alt="Dramatic neo-noir movie poster for The Batman showing crimson rain reflections, brooding silhouette in a Gotham alleyway." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzv7YBjfZScLc0Ui8E2Y9BCLVWwdQfgtoYe265ZPqSjrK4Qc-Krllb9e4vtWJOGrezhFbfJkRVtGP0zaowtsWkiFO6dv1OXcB6FKGWcDFKE7JIc6cqWNGcqJ25aQ0PXmBgRO5KqGN96DmubL9iIANBnocDE5Z1t0prfE-EuPUMsP42Y-wuQsUDInwVhyQRm8UvcpmAVX84ltLvuGLWFyT7tbmT2isM9A8vm_As70Rg"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/80 text-secondary px-1.5 py-0.5 rounded text-[11px] font-bold">★ 7.8</div>
+</div>
+<h4 class="font-label-md text-on-surface pt-2 truncate group-hover:text-primary transition-colors">The Batman</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">2022 • Action / Crime</p>
+</div>
+<!-- Rec Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[2/3] rounded-xl overflow-hidden border border-outline-variant/20 shadow-md group-hover:border-primary-container group-hover:scale-105 transition-all duration-300">
+<img alt="The Prestige" class="w-full h-full object-cover" data-alt="High-contrast psychological thriller poster featuring intense dual character portraits with Victorian illusionist motifs and deep shadow play." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7fZ0I41JlNWxgVIJ_l4herSRMPPPpb1AvCY5JavadeqChg25XwCOcKTft1Hp0DIgMo22UDE-YTJJ8GNqZVVMFPJ439KR4U_oBPH_b4WhH4L0OtZZ0s_k2cP-uN9qXcreAkq8GuTWBzmj0ca8dZIiYH8RudCyDAzXfwEhV3rp_owdyIocaRuT-9d9BzC1nlmmMzyX8BpOyZJprRA7LRFn9j_diDU-ijXfT7S32gd7T"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/80 text-secondary px-1.5 py-0.5 rounded text-[11px] font-bold">★ 8.5</div>
+</div>
+<h4 class="font-label-md text-on-surface pt-2 truncate group-hover:text-primary transition-colors">The Prestige</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">2006 • Drama / Mystery</p>
+</div>
+<!-- Rec Card 5 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[2/3] rounded-xl overflow-hidden border border-outline-variant/20 shadow-md group-hover:border-primary-container group-hover:scale-105 transition-all duration-300">
+<img alt="Shang-Chi and the Legend of the Ten Rings" class="w-full h-full object-cover" data-alt="Dynamic martial arts and mythical superhero poster with intense mystical energy rings glowing orange and blue around the protagonist in battle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZjzdNqWGlrCDRseQNmwn0cJxKMDWQiDJ0RszNrJfROFefrdsvNgJefmtXG3l9V7BCn6knDahHxfIJHsCfklzEybp34IWGvXvLbqzKwhRxUQAVoErMpxAjcYhtS_zDJe2N0A0k3slNU-8gOgK-SCa6nWsqb8NV_dD93GzPLkfqo3HCEKEa76g1pF0jKZt-7msQq20Awu_QRKol09SjR80xn-6Skh98zT7XPHHill_O"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/80 text-secondary px-1.5 py-0.5 rounded text-[11px] font-bold">★ 7.4</div>
+</div>
+<h4 class="font-label-md text-on-surface pt-2 truncate group-hover:text-primary transition-colors">Shang-Chi</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">2021 • Fantasy / Action</p>
+</div>
+<!-- Rec Card 6 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[2/3] rounded-xl overflow-hidden border border-outline-variant/20 shadow-md group-hover:border-primary-container group-hover:scale-105 transition-all duration-300">
+<img alt="Oppenheimer" class="w-full h-full object-cover" data-alt="Epic historical drama poster featuring a scientist standing before a glowing nuclear core with intense amber flame reflections and deep shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtY6Ui3K9FL6BM5BCfODMVaDTP85P9CnlVpLLXaF5UUTycAOmA0Uuu8yahuwM5vD4IA6hT5teH74kxMt5QI5d1qN1r7roNQnpfWp4dG41qGbcRnh5qagr_41NVETw54oeDdG_VGbCW-vNKgyejaV5m0wU2LfZSpmDqdml264ZUtMnTLgZE6Kpbp613gZ3odECJwGYzov5CZD0WWnpvFAcBz_vgfPkMau2LE4ITxrmV"/>
+<div class="absolute top-2 right-2 bg-surface-container-lowest/80 text-secondary px-1.5 py-0.5 rounded text-[11px] font-bold">★ 8.9</div>
+</div>
+<h4 class="font-label-md text-on-surface pt-2 truncate group-hover:text-primary transition-colors">Oppenheimer</h4>
+<p class="text-body-sm text-on-surface-variant text-xs">2023 • Biography / Drama</p>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Implementation) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width border-t border-outline-variant/20 dark:border-outline-variant/20 flat no shadows">
+<div class="w-full max-w-7xl mx-auto px-gutter py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-lg">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start gap-1">
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded bg-primary-container flex items-center justify-center text-on-primary-container text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="movie" style="font-variation-settings: 'FILL' 1;">movie</span>
+</span>
+<span>CINEMIND</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant text-center md:text-left">
+          © 2025 CINEMIND Entertainment Inc. All rights reserved. Powered by TMDb &amp; Theatrical Motion Alliance.
+        </p>
+</div>
+<!-- Links Cluster -->
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Partner Theatres</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Streaming Providers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">API &amp; Attribution</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Editorial Charter</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

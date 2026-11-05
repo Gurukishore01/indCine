@@ -1,0 +1,1532 @@
+# CINEMIND AIOS — MASTER PRODUCT, ARCHITECTURE & ENGINEERING TRANSFORMATION
+
+## GLOBAL MOVIE INTELLIGENCE OPERATING SYSTEM
+
+**Product:** CINEMIND AIOS  
+**Category:** Global Movie Discovery, Intelligence and Research Operating System  
+**Tagline:** Discover. Understand. Decide. Watch.  
+**Core principle:** Every movie lover. Every language. Every film industry. One intelligent platform.
+
+---
+
+# PART 1 — YOUR ROLE AND MISSION
+
+Act as a Principal AI Systems Architect, Senior Full-Stack Engineer, Multi-Agent AI Engineer, Entertainment Data Engineer, Research Engineer and Product Designer.
+
+Your mission is to transform the existing CINEMIND AIOS application into a genuinely useful, reliable and intelligent global movie platform.
+
+This is an upgrade of an existing project.
+
+It is NOT permission to discard the existing application and generate an unrelated replacement.
+
+CINEMIND must not become:
+- A Tamil-only movie website.
+- A Hollywood-only movie website.
+- A conventional streaming platform.
+- A static collection of movie posters.
+- A chatbot that merely recommends films.
+- A business-only movie analytics dashboard.
+- A dashboard containing agents that exist only in name.
+
+It must become a consumer-first, globally accessible Movie Intelligence Operating System.
+
+An ordinary movie lover should be able to discover what is happening in world cinema, understand movie popularity, find relevant films, compare audience reception and decide what to watch.
+
+Advanced film-industry research should be available as an additional capability.
+
+## Non-negotiable rules
+
+1. Inspect the entire existing project before modifying it.
+2. Preserve the existing six-screen Stitch design.
+3. Preserve the Obsidian Cinema design system.
+4. Reuse existing functional services and components.
+5. Fix actual problems rather than masking them.
+6. Never substitute mock data for live data without explicitly identifying it as a demonstration.
+7. Never fabricate movie information, statistics, awards, citations or agent execution.
+8. Never expose API keys or tokens.
+9. Respect every external provider's API terms, attribution requirements and usage restrictions.
+10. Do not introduce paid services or require paid API billing.
+11. Implement and test features in controlled phases.
+12. Keep the application runnable throughout development.
+
+---
+
+# PART 2 — THE CINEMIND PRODUCT VISION
+
+CINEMIND is a GLOBAL-FIRST movie intelligence platform.
+
+It must serve people interested in:
+
+### Indian cinema
+- Tamil
+- Telugu
+- Malayalam
+- Kannada
+- Hindi
+- Bengali
+- Marathi
+- Punjabi
+- Gujarati
+- Other Indian-language films
+
+### International cinema
+- Hollywood and other US cinema
+- Korean cinema
+- Japanese cinema
+- Chinese cinema
+- Hong Kong cinema
+- French cinema
+- German cinema
+- Spanish cinema
+- British cinema
+- Italian cinema
+- Other European cinema
+- African cinema
+- Middle Eastern cinema
+- Latin American cinema
+- Southeast Asian cinema
+- Independent and international cinema
+
+This list must not be a hardcoded limit.
+
+Use the supported language and country configuration from the selected data providers.
+
+The default discovery experience must be WORLDWIDE.
+
+The user can narrow discovery by language, region, country, genre, release period or other filters.
+
+Never assume that the user's location determines their preferred cinema.
+
+## Product philosophy
+
+A user who loves Tamil cinema should find Tamil movies accurately.
+
+A user who loves Korean cinema should find Korean movies accurately.
+
+A user who watches movies without language restrictions should discover films from across the world.
+
+The global homepage must not be dominated by old, generic popular titles.
+
+It should help users discover both newly relevant movies and important older films, with the correct category and release-period context.
+
+---
+
+# PART 3 — COMPLETE CODEBASE AUDIT
+
+Before making changes, inspect all existing project files.
+
+Pay special attention to:
+
+- server.ts
+- server/aios/orchestrator.ts
+- server/aios/agentRegistry.ts
+- server/aios/agents/
+- server/aios/geminiClient.ts
+- server/services/tmdbService.ts
+- src/types/aios.ts
+- src/data/movies.ts
+- src/pages/
+- src/components/
+- src/utils/
+- package.json
+- .env.example
+- existing AIOS.md and Stitch design files
+
+The supplied project currently contains:
+- A fixed mood-recommendation orchestration workflow.
+- Intent and Planning Agent.
+- Movie Discovery Agent.
+- Recommendation Agent.
+- Review and Sentiment Agent.
+- A registry containing additional planned agents.
+- TMDB integration.
+- A hardcoded movie data file.
+- An agent execution log component.
+- A global chat component.
+- Six existing screens.
+
+Verify these findings against the current working code because it may have changed since the supplied ZIP was created.
+
+### Critical existing defects to investigate
+
+A. The orchestrator currently runs a fixed sequence of four agents rather than dynamically routing arbitrary requests.
+
+B. The Movie Discovery Agent currently performs text search and then filters the returned candidates by language. When no exact language matches exist, it broadens the language scope. This can return unrelated films despite an explicit language requirement.
+
+C. The discovery workflow does not consistently use the TMDB Discover endpoint for language, genre, runtime and release-period filters.
+
+D. The movie mapper assigns a default US region to returned movies. This must not be treated as the actual release or viewing region.
+
+E. The language mapping covers only a limited number of languages.
+
+F. TMDB popularity is currently mapped into a capped trend score. A source popularity value must not be represented as a percentage or an independently calculated trend score.
+
+G. Generic streaming-provider search URLs must not be presented as verified streaming availability.
+
+H. Planned agents must not be presented as active.
+
+I. Hardcoded movie records must not remain the source of live discovery results.
+
+Fix these problems without unnecessarily rewriting working features.
+
+---
+
+# PART 4 — THE GLOBAL CINEMA INTELLIGENCE HOMEPAGE
+
+Transform the existing homepage into the main Global Cinema Intelligence Dashboard.
+
+Preserve the existing Stitch visual design.
+
+The homepage should have these major sections.
+
+## A. Global Cinema Pulse
+
+A concise overview of current worldwide cinema activity.
+
+Show:
+- Global trending movies.
+- Movies gaining attention.
+- Movies losing attention.
+- New releases.
+- Upcoming releases.
+- Audience favourites.
+- Critically acclaimed films.
+- Major global cinema stories.
+
+Each section must identify the source, measurement period, geographic scope and retrieval time.
+
+## B. Worldwide Trending Now
+
+Show movies currently trending according to a clearly identified source.
+
+Support:
+- Daily.
+- Weekly.
+
+Provide a movie card with:
+- Poster.
+- Title.
+- Release year.
+- Original language.
+- Genres.
+- Rating with source label.
+- Popularity or trend metric with source label.
+- Short synopsis.
+- Movie details navigation.
+
+## C. Rising Worldwide
+
+Show movies for which CINEMIND has sufficient historical evidence of increasing attention.
+
+Include:
+- Previous observed rank.
+- Current observed rank.
+- Previous measured value.
+- Current measured value.
+- Percentage change where mathematically valid.
+- Observation period.
+- Source.
+- Last updated timestamp.
+
+## D. Falling Worldwide
+
+Show movies with measurable decreases in the selected popularity or attention metric.
+
+Explain the measurement and observation period.
+
+Do not equate a fall in popularity with a poor-quality movie or commercial failure.
+
+## E. Explore World Cinema
+
+Provide an attractive discovery section with language and regional filters.
+
+Examples:
+- Tamil Spotlight.
+- Telugu Spotlight.
+- Malayalam Spotlight.
+- Korean Spotlight.
+- Japanese Spotlight.
+- Hollywood Spotlight.
+- European Cinema.
+- World Cinema Hidden Gems.
+
+These are dynamic filters, not separate hardcoded movie databases.
+
+## F. Other discovery collections
+
+Include:
+- Recently released.
+- Upcoming.
+- Most discussed.
+- Audience favourites.
+- Critically acclaimed.
+- Award winners.
+- Hidden gems.
+- Highly rated classics.
+- Genre collections.
+- Director collections.
+
+Every collection must have a clear and correct definition.
+
+Do not mix new releases with classic movies in the same section without explaining the selection.
+
+---
+
+# PART 5 — MOVIE DISCOVERY AND SEARCH ENGINE
+
+This is a critical priority.
+
+CINEMIND must support global movie discovery with accurate filters.
+
+## A. Search modes
+
+Support:
+1. Exact movie-title search.
+2. Partial movie-title search.
+3. Original-language discovery.
+4. Genre-based discovery.
+5. Actor search.
+6. Director search.
+7. Keyword search.
+8. Natural-language movie search.
+9. Similar-movie discovery.
+10. Release-period discovery.
+
+Use the appropriate API operation for the task.
+
+For TMDB:
+
+- Use /search/movie for text-based title and alternative-title search.
+- Use /discover/movie for structured filtering.
+- Use movie details and appended data for individual movie information.
+
+Do not use a title search endpoint as a replacement for structured discovery.
+
+## B. Correct language filtering
+
+Distinguish:
+
+- Original language.
+- Displayed metadata language.
+- Dubbed language availability.
+- Subtitle language availability.
+- Regional release country.
+
+These are not interchangeable.
+
+Use the source's original-language filter.
+
+For Tamil, use the TMDB original-language code ta.
+
+For other languages, use the provider's supported language codes.
+
+Do not assume every language has identical metadata coverage.
+
+Use the supported language configuration instead of maintaining an incomplete hardcoded language map.
+
+### Mandatory strict-filter behaviour
+
+When a user explicitly asks for Tamil movies:
+- Apply the Tamil original-language constraint at the backend.
+- Return matching Tamil original-language movies only.
+- Do not silently include Telugu, Hindi, Malayalam or English films.
+- Do not remove the language constraint when the first page has no results.
+- Continue pagination within the valid filter where appropriate.
+- If no matching results exist, show an honest empty state.
+
+If the user asks for Tamil-dubbed movies, use a separate dubbed-availability workflow. Do not treat original-language Tamil movies as the only possible result.
+
+## C. Correct release-period filtering
+
+Support:
+- Latest releases.
+- This week.
+- This month.
+- This year.
+- Specific year.
+- Custom date range.
+- Classics.
+- All-time best.
+
+For latest-release queries, use appropriate release-date constraints.
+
+For regional theatrical releases, use the correct region and release type where supported.
+
+Never return old films as new releases simply because they are popular.
+
+Do not apply a recent-release constraint to classic-film or all-time searches.
+
+## D. Relevance and ranking
+
+Use a transparent ranking model.
+
+Consider:
+- Exact title match.
+- Original-language match.
+- Genre match.
+- Release-period match.
+- Runtime match.
+- User-selected filters.
+- Source popularity.
+- Rating quality.
+- Vote count.
+
+Explicit user constraints must take precedence over general popularity.
+
+Never broaden a strict filter without informing the user and obtaining permission.
+
+## E. Search diagnostics
+
+During development, record:
+- Query received.
+- Parsed intent.
+- Selected language code.
+- Selected region.
+- Selected date range.
+- API endpoint.
+- Query parameters.
+- Number of results.
+- Filter rejection counts.
+- Pagination status.
+- Fallback reason.
+
+This is required to debug incorrect search results.
+
+---
+
+# PART 6 — GLOBAL TREND INTELLIGENCE
+
+Build a dedicated Global Trend Intelligence subsystem.
+
+Do not simply rename TMDB's popularity score as a CINEMIND trend score.
+
+## A. Separate the measurements
+
+Maintain separate fields for:
+
+1. Source popularity score.
+2. Source trending chart/rank.
+3. CINEMIND observed rank movement.
+4. Search-interest signal.
+5. Review or rating activity.
+6. Social engagement, only where permitted data is available.
+7. Box-office movement.
+8. Upcoming-film anticipation.
+
+These metrics must not be mixed without an explicit methodology.
+
+## B. Historical snapshots
+
+Implement a movie trend snapshot model.
+
+Each snapshot should contain:
+
+- Provider.
+- Provider movie ID.
+- Snapshot timestamp.
+- Metric name.
+- Metric value.
+- Rank, when available.
+- Region or market scope.
+- Time window.
+- API endpoint or source reference.
+- Data retrieval status.
+
+Collect snapshots at a sustainable frequency, subject to provider terms and rate limits.
+
+Use a storage adapter.
+
+First inspect whether the existing environment provides persistent storage.
+
+If persistent storage is unavailable:
+- Do not pretend snapshots are permanently stored.
+- Do not claim historical trends are available.
+- Explain that a persistent database is required.
+- Provide a development-only storage option if appropriate.
+- Keep historical trend features disabled until reliable persistence is available.
+
+Never depend on browser local storage as a shared server-side trend database.
+
+## C. Rising, falling and stable calculations
+
+Use comparable metrics, matching regions and consistent time windows.
+
+Example:
+
+Percentage change =
+((Current metric - Previous metric) / Previous metric) × 100
+
+Handle zero and missing baseline values safely.
+
+Use a minimum observation requirement before assigning a movement label.
+
+Possible classifications:
+- Rising.
+- Falling.
+- Stable.
+- New entry.
+- Insufficient history.
+
+For rank:
+- Remember that rank 1 is better than rank 10.
+- Show rank improvement or decline accurately.
+
+Never compare a daily value directly against an incompatible weekly value.
+
+Never treat the number of API results as a measure of public interest.
+
+## D. Honest source labels
+
+If the source is TMDB, use labels such as:
+- TMDB Trending — Daily.
+- TMDB Trending — Weekly.
+- TMDB Popularity.
+- CINEMIND observed TMDB rank movement.
+
+Do not label a TMDB ranking as a complete measurement of all worldwide movie-viewing behaviour.
+
+Regional trends should only be shown when the source genuinely provides regional information.
+
+---
+
+# PART 7 — EXTERNAL DATA SOURCE ARCHITECTURE
+
+Use a modular source registry.
+
+TMDB is the primary movie metadata provider.
+
+Other providers must be optional and enabled only when their access, terms and costs have been verified.
+
+## A. TMDB
+
+Use for:
+- Movie search.
+- Discovery.
+- Metadata.
+- Original language.
+- Genres.
+- Release dates.
+- Cast and crew.
+- Posters and backdrops.
+- Daily and weekly trending.
+- Popular movies.
+- Upcoming and now-playing movies.
+- Similar movies.
+- Regional release information.
+- Watch-provider information where available.
+
+Use the correct image configuration and image paths.
+
+Do not hardcode assumptions that every movie has a poster, runtime or complete cast.
+
+Use TMDB attribution requirements.
+
+Include the required notice:
+
+"This product uses the TMDB API but is not endorsed or certified by TMDB."
+
+Include the approved TMDB logo and attribution in the About or Credits area as required.
+
+## B. IMDb
+
+Do not assume unrestricted free IMDb API access.
+
+Use IMDb data only through permitted datasets, licensed services or another explicitly authorised access method.
+
+Do not scrape restricted IMDb pages or redistribute protected data.
+
+If no suitable access exists, leave IMDb ratings unavailable rather than fabricating or copying them.
+
+## C. Google Trends
+
+Google Trends can be a potential search-interest source.
+
+However, do not assume that the Google Trends API is publicly available.
+
+Its official API documentation currently describes an alpha programme with limited access.
+
+Use the API only if the project has been accepted and authorised.
+
+Otherwise, use permitted manual research or clearly identify search-interest data as unavailable.
+
+Never label Google Trends interest as actual ticket sales or audience viewership.
+
+## D. Box-office sources
+
+Use:
+- Official studio or distributor announcements.
+- Official market reports.
+- Reliable industry publications.
+- Licensed data feeds if available and approved.
+
+Do not assume The Numbers/OpusData or IMDb/Box Office Mojo structured datasets are free.
+
+Do not systematically scrape restricted commercial datasets.
+
+## E. Awards sources
+
+Prefer official award-body sources:
+- Academy Awards.
+- BAFTA.
+- Cannes Film Festival.
+- Venice Film Festival.
+- Berlin International Film Festival.
+- Indian National Film Awards.
+- Other recognised regional and international award bodies.
+
+Record the award organisation, ceremony year, category, title and winner/nominee/selection status.
+
+## F. Streaming availability
+
+Use authorised streaming availability sources.
+
+TMDB watch-provider data is powered by JustWatch and requires JustWatch attribution.
+
+Use the returned provider information and source URL correctly.
+
+Do not invent title-specific streaming deep links.
+
+If only a generic provider search URL is available, label it "Search on [Provider]" rather than "Available to watch".
+
+## G. Source connector rules
+
+Each source connector must have:
+- Provider name.
+- Access method.
+- API or source URL.
+- Credential requirements.
+- Terms and licence notes.
+- Supported regions.
+- Supported data types.
+- Rate-limit handling.
+- Attribution requirements.
+- Last successful retrieval time.
+- Error state.
+
+If a provider is unavailable, the rest of CINEMIND must continue working.
+
+---
+
+# PART 8 — MULTI-AGENT AIOS ARCHITECTURE
+
+Create a central AIOS orchestrator.
+
+The orchestrator must dynamically determine which agents and tools are required.
+
+Do not run all agents for every request.
+
+## Core agents
+
+### 1. Intent and Planning Agent
+
+Understands natural-language questions.
+
+Extracts:
+- Task type.
+- Movie titles.
+- People.
+- Genres.
+- Original language.
+- Region.
+- Release period.
+- Runtime.
+- Mood.
+- User constraints.
+
+Produces a structured execution plan.
+
+### 2. Movie Discovery Agent
+
+Finds and filters actual movie records using the discovery service.
+
+Must respect strict constraints.
+
+### 3. Recommendation Agent
+
+Ranks movies based on explicit user preferences and transparent scoring.
+
+Explains why each result is relevant.
+
+### 4. Trend Intelligence Agent
+
+Analyses supported popularity and trend data.
+
+### 5. Review and Sentiment Agent
+
+Summarises actual retrieved audience and critic information.
+
+Never infer critic consensus from TMDB descriptions or ratings alone.
+
+### 6. Box Office Analysis Agent
+
+Analyses sourced financial information.
+
+### 7. Awards Intelligence Agent
+
+Verifies award nominations, winners and festival selections.
+
+### 8. Upcoming Demand Agent
+
+Analyses measurable pre-release anticipation signals.
+
+### 9. OTT Availability Agent
+
+Finds country-specific streaming options.
+
+### 10. Cinema Discovery Agent
+
+Finds cinemas and available booking destinations for a user-selected location.
+
+### 11. General Movie Research Agent
+
+Handles broader movie questions and coordinates other agents where necessary.
+
+### 12. Evidence Validation Agent
+
+Checks source quality, conflicts, freshness and unsupported claims.
+
+### 13. Personalisation Agent
+
+Uses approved user preferences to improve discovery and recommendations.
+
+## Dynamic orchestration examples
+
+Question:
+
+"What Tamil thrillers released recently are worth watching?"
+
+Required:
+- Intent and Planning.
+- Movie Discovery.
+- Recommendation.
+- Review and Sentiment.
+- Evidence Validation.
+
+Question:
+
+"Which movies are rising worldwide?"
+
+Required:
+- Trend Intelligence.
+- Movie Discovery.
+- Evidence Validation.
+
+Question:
+
+"Why did this film fail commercially?"
+
+Required:
+- Movie Discovery.
+- Box Office Analysis.
+- Review and Sentiment.
+- General Movie Research.
+- Evidence Validation.
+
+Question:
+
+"Which Korean films are becoming popular in India?"
+
+Required:
+- Trend Intelligence.
+- Movie Discovery.
+- Regional Data Retrieval.
+- Evidence Validation.
+
+The orchestrator must create a task plan, manage dependencies, run independent tasks in parallel when useful, and return partial results if an optional agent fails.
+
+---
+
+# PART 9 — RAG AND EVIDENCE-BASED RESEARCH
+
+Implement a modular Retrieval-Augmented Generation architecture.
+
+Expected workflow:
+
+USER QUESTION
+↓
+INTENT UNDERSTANDING
+↓
+SOURCE SELECTION
+↓
+INFORMATION RETRIEVAL
+↓
+EVIDENCE EXTRACTION
+↓
+EVIDENCE VALIDATION
+↓
+GEMINI SYNTHESIS
+↓
+CITED ANSWER
+
+Do not allow Gemini to invent current facts.
+
+Use retrieved evidence for:
+- Current releases.
+- Awards.
+- Box-office figures.
+- Current movie trends.
+- OTT availability.
+- Cinema showtimes.
+- Current industry announcements.
+
+Every evidence object must preserve:
+
+- Claim.
+- Source name.
+- Source URL.
+- Publication date, when available.
+- Retrieval timestamp.
+- Region.
+- Measurement period.
+- Metric definition.
+- Confidence/evidence quality.
+- Verification status.
+
+Support conflicting-source detection.
+
+When sources disagree:
+- Show the disagreement.
+- Identify the different reporting definitions.
+- Prefer direct official sources where appropriate.
+- Avoid silently selecting the most favourable number.
+
+Confidence categories:
+- High.
+- Medium.
+- Low.
+- Insufficient evidence.
+
+Do not invent numerical confidence percentages.
+
+---
+
+# PART 10 — MOVIE INTELLIGENCE FEATURES
+
+## A. Movie details
+
+Display:
+- Original title.
+- Display title.
+- Release date.
+- Original language.
+- Origin country when available.
+- Genres.
+- Runtime.
+- Director.
+- Cast.
+- Synopsis.
+- Source-labelled ratings.
+- Vote counts.
+- Trailer where available.
+- Awards.
+- Streaming options.
+- Related movies.
+
+Do not show invented values for missing fields.
+
+## B. Movie comparison
+
+Allow users to compare two or more movies based on:
+- Genre.
+- Language.
+- Release year.
+- Audience ratings.
+- Vote counts.
+- Critic reception.
+- Awards.
+- Box-office performance.
+- Popularity.
+- Available trend history.
+
+Clearly explain missing metrics.
+
+## C. Review intelligence
+
+Distinguish:
+- Audience ratings.
+- Audience reviews.
+- Critic reviews.
+- Critic scores.
+- CINEMIND-generated summaries.
+
+Do not present a Gemini-generated summary as an actual review or critic score.
+
+## D. Box-office intelligence
+
+Distinguish:
+- Production budget.
+- Domestic gross.
+- International gross.
+- Worldwide gross.
+- Net collection.
+- Distributor share.
+- Producer revenue.
+- Profit.
+
+Do not calculate profitability from gross alone.
+
+Do not label a movie a hit or flop without sufficient financial evidence and a defensible methodology.
+
+## E. Awards intelligence
+
+Distinguish:
+- Winner.
+- Nominee.
+- Official selection.
+- Festival award.
+- Audience award.
+- Honourable mention.
+
+Record award ceremony year separately from release year.
+
+## F. Upcoming anticipation
+
+Measure available signals such as:
+- Search interest.
+- Trailer views.
+- Trailer engagement.
+- Watchlist activity.
+- Audience discussion.
+- Pre-release ticket sales, where reliably reported.
+
+Explain which signals are actually available.
+
+Do not invent an anticipation score.
+
+Do not claim that audience interest guarantees box-office success.
+
+---
+
+# PART 11 — CONSUMER-FIRST USER EXPERIENCE
+
+CINEMIND is primarily for ordinary movie lovers.
+
+Keep the experience simple and engaging.
+
+Advanced research tools should be accessible without making the homepage intimidating.
+
+Preserve the existing six screens:
+
+1. Homepage / Global Movie Intelligence.
+2. Search and Discovery.
+3. Movie Details.
+4. Where to Watch.
+5. Book Cinema Tickets.
+6. Quick Pick.
+
+Improve these screens without replacing the existing Stitch visual design.
+
+## Homepage
+
+Global-first discovery and intelligence.
+
+## Search
+
+Powerful filters and natural-language discovery.
+
+## Movie Details
+
+Complete, source-labelled movie information.
+
+## Where to Watch
+
+Regional availability with verified data or clearly labelled search fallbacks.
+
+## Book Cinema Tickets
+
+User-selected city, actual cinema results and verified booking links.
+
+## Quick Pick
+
+A fast, personalised movie decision engine.
+
+## Global AIOS Chat
+
+Available on all screens.
+
+The chat must support:
+- General movie questions.
+- Natural-language search.
+- Recommendations.
+- Movie comparisons.
+- Global trends.
+- Research questions.
+- Follow-up questions.
+- Source citations.
+- Movie-card results.
+
+Text must be the primary interaction.
+
+Voice interaction must remain optional.
+
+---
+
+# PART 12 — PERSONALISATION AND MEMORY
+
+Introduce user-controlled personalisation.
+
+Possible preferences:
+- Favourite languages.
+- Favourite genres.
+- Favourite actors.
+- Favourite directors.
+- Preferred runtime.
+- Preferred rating sources.
+- Disliked genres.
+- Watched movies.
+- Watchlist.
+- Previously recommended movies.
+
+Requirements:
+- Work without requiring an account for basic discovery.
+- Store permanent preferences only with appropriate user consent.
+- Provide review and deletion controls.
+- Avoid collecting unnecessary personal data.
+- Do not treat temporary chat context as permanent memory.
+
+Do not make personalisation a dependency for core functionality.
+
+---
+
+# PART 13 — TECHNICAL ARCHITECTURE
+
+Keep the existing TypeScript, React, Node/Express and Gemini architecture unless the audit establishes a strong reason to change it.
+
+Prefer a modular monolith over unnecessary microservices.
+
+Separate:
+
+1. Frontend.
+2. API routes.
+3. AIOS orchestration.
+4. Agent modules.
+5. Source connector registry.
+6. Data normalisation.
+7. Evidence validation.
+8. Persistence adapter.
+9. Caching.
+10. Security and configuration.
+
+Use typed contracts for:
+- User requests.
+- Agent tasks.
+- Agent results.
+- Evidence.
+- Source metadata.
+- Trend snapshots.
+- Movie records.
+- API responses.
+- Execution events.
+
+Use consistent JSON API responses.
+
+Every API route must return the correct Content-Type.
+
+Do not allow an HTML error page to be parsed as JSON by the frontend.
+
+Use structured error responses with suitable HTTP status codes.
+
+Implement safe frontend fetch handling:
+- Check response status.
+- Check content type.
+- Handle invalid JSON.
+- Show useful error messages.
+- Never expose server secrets.
+
+---
+
+# PART 14 — GEMINI ENGINE
+
+Gemini is the central reasoning and synthesis engine.
+
+Implement:
+- Centralised Gemini client.
+- Structured outputs where appropriate.
+- Schema validation.
+- Request timeouts.
+- Bounded retries.
+- Fallback model configuration.
+- Context management.
+- Token-conscious prompts.
+- Response latency measurement.
+- Error isolation.
+
+Do not retry a slow model repeatedly before trying a suitable fallback.
+
+Avoid using Gemini for tasks that can be completed accurately through normal code.
+
+Examples:
+- Language filtering.
+- Release-date filtering.
+- Percentage calculations.
+- Ranking calculations.
+- Data validation.
+- Duplicate removal.
+
+Use deterministic code for these tasks.
+
+Use Gemini for:
+- Intent understanding.
+- Planning.
+- Evidence synthesis.
+- Review theme analysis.
+- Natural-language explanations.
+
+Keep all API credentials on the backend.
+
+---
+
+# PART 15 — MCP-READY TOOL DESIGN
+
+Create a modular tool registry with clear input and output schemas.
+
+Keep the architecture compatible with future Model Context Protocol integrations.
+
+Possible tools:
+- TMDB search.
+- TMDB discovery.
+- TMDB movie details.
+- TMDB trending.
+- TMDB watch providers.
+- Award research.
+- Box-office research.
+- Review retrieval.
+- Search-interest retrieval.
+- OTT availability.
+- Cinema discovery.
+
+Do not claim MCP is implemented merely because the system has a tool registry.
+
+Implement an actual MCP server only as a separate future milestone if the environment and use case justify it.
+
+---
+
+# PART 16 — SECURITY, COST AND LICENSING
+
+The project must prioritise a ₹0 development budget.
+
+Use:
+- Existing Google AI Studio infrastructure.
+- Existing Gemini access and available quota.
+- TMDB non-commercial developer access subject to its terms.
+- Open-source packages.
+- Existing infrastructure.
+- Free services only when their terms and limitations have been checked.
+
+Do not:
+- Activate paid billing.
+- Require a credit card.
+- Introduce paid hosting.
+- Introduce paid APIs.
+- Introduce paid databases.
+- Add paid data subscriptions.
+- Introduce unnecessary infrastructure.
+
+If a feature requires paid access, mark it as optional and explain the requirement.
+
+Do not silently replace it with a paid service.
+
+Never:
+- Put credentials in frontend code.
+- Commit credentials to GitHub.
+- Return credentials through API endpoints.
+- Log secrets.
+- Expose secret values in error messages.
+
+Respect provider licensing, rate limits, copyright and attribution.
+
+Do not scrape restricted sources or bypass access controls.
+
+Important: TMDB's free developer API use is for non-commercial projects with attribution. If CINEMIND becomes a revenue-generating commercial product, its licensing must be reviewed before continuing to use the developer API.
+
+---
+
+# PART 17 — AGENT EXECUTION TRANSPARENCY
+
+Improve the existing AgentExecutionLogPanel.
+
+Show real execution events:
+- User query received.
+- Intent identified.
+- Plan created.
+- Agents selected.
+- Tools invoked.
+- Data retrieval started.
+- Data retrieval completed.
+- Evidence validation.
+- Synthesis.
+- Final answer.
+
+States:
+- Waiting.
+- Planning.
+- Running.
+- Completed.
+- Partial.
+- Failed.
+- Skipped.
+
+Each event should show:
+- Agent name.
+- Action.
+- Timestamp.
+- Duration.
+- Result summary.
+- Warning or failure reason.
+
+The log must be generated from actual backend execution events.
+
+Never create fictional agent activity for visual presentation.
+
+---
+
+# PART 18 — TESTING AND QUALITY ASSURANCE
+
+Testing must include unit tests, integration tests and real API tests where credentials are available.
+
+Do not report a test as passed without executing it.
+
+## A. Language and regional discovery tests
+
+TEST 1:
+"Show me recent Tamil thriller movies."
+
+Expected:
+- Tamil original-language results.
+- Correct release dates.
+- Thriller genre.
+- No unrelated languages.
+
+TEST 2:
+"Show me Korean psychological thrillers."
+
+Expected:
+- Korean-language results.
+- Relevant genre and keyword filtering.
+
+TEST 3:
+"Find Japanese films released in 2025."
+
+Expected:
+- Correct language.
+- Correct release year.
+
+TEST 4:
+"Find Tamil-dubbed Korean films."
+
+Expected:
+- Korean original-language films with verified Tamil dubbing information.
+- If dubbing information is unavailable, explain that limitation.
+
+TEST 5:
+"Show classic Tamil movies."
+
+Expected:
+- Older Tamil movies.
+- No accidental latest-release filter.
+
+TEST 6:
+"Show me all languages."
+
+Expected:
+- No unintended language restriction.
+
+## B. Global intelligence tests
+
+TEST 7:
+"What movies are trending worldwide today?"
+
+Expected:
+- Real source-backed global trending results.
+- Exact time window.
+- Retrieval time.
+
+TEST 8:
+"Which movies are rising in popularity?"
+
+Expected:
+- Historical observations.
+- Correct calculation.
+- No invented baseline.
+
+TEST 9:
+"Which movies are falling?"
+
+Expected:
+- Measurable decline.
+- Consistent comparison period.
+- Clear metric definition.
+
+TEST 10:
+"Which Korean movies are gaining attention in India?"
+
+Expected:
+- Korean original-language films.
+- India-specific signals only when supported by a regional source.
+
+## C. Research tests
+
+TEST 11:
+"Why did this film underperform commercially?"
+
+Expected:
+- Sourced budget and box-office evidence.
+- Clear distinction between gross and profit.
+- Audience/critic evidence where available.
+- Honest uncertainty.
+
+TEST 12:
+"Which movies won the latest Academy Awards?"
+
+Expected:
+- Official source.
+- Correct ceremony year.
+- Winner and nominee distinctions.
+
+TEST 13:
+"Where can I watch this movie in India?"
+
+Expected:
+- India-specific provider data.
+- Last-checked timestamp.
+- Correct JustWatch attribution when using TMDB provider data.
+
+## D. AIOS orchestration tests
+
+TEST 14:
+"Compare two movies based on audience reception, awards, trends and box office."
+
+Expected:
+- Correct agent selection.
+- Multiple actual tool calls.
+- Evidence validation.
+- Clear comparison.
+
+TEST 15:
+"What is happening in global cinema this week?"
+
+Expected:
+- Dynamic planning.
+- Multiple relevant agents.
+- Current sources.
+- Source-backed synthesis.
+- Honest missing-data disclosure.
+
+## E. Reliability tests
+
+TEST 16:
+- Missing TMDB credential.
+- Invalid TMDB credential.
+- TMDB timeout.
+- TMDB rate limit.
+- Empty search result.
+- Invalid page number.
+- Missing poster.
+- Invalid API response.
+- Gemini unavailable.
+- Optional source unavailable.
+
+Expected:
+- Correct JSON responses.
+- Useful error messages.
+- No crashes.
+- No secret exposure.
+- No fake movie data.
+
+---
+
+# PART 19 — IMPLEMENTATION ROADMAP
+
+Do not try to build the entire system in one uncontrolled generation.
+
+Work in these phases.
+
+## PHASE 0 — AUDIT AND STABILISATION
+
+- Audit the actual code.
+- Verify Gemini configuration.
+- Verify TMDB configuration.
+- Fix broken API responses.
+- Reproduce Tamil search failures.
+- Fix authentication and environment configuration.
+- Verify movie image loading.
+- Identify all hardcoded movie data.
+- Confirm the existing six screens still work.
+
+Deliverable:
+A verified audit report and a stable application.
+
+## PHASE 1 — GLOBAL MOVIE DISCOVERY
+
+- Correct original-language filtering.
+- Implement TMDB Discover properly.
+- Implement release-period filtering.
+- Implement region/language separation.
+- Implement dynamic pagination.
+- Support the full provider language configuration.
+- Fix Tamil search.
+- Remove language fallback that violates explicit constraints.
+- Remove hardcoded movie records as the live data source.
+
+Deliverable:
+A working worldwide movie search and discovery engine.
+
+## PHASE 2 — GLOBAL HOMEPAGE
+
+- Build Global Cinema Pulse.
+- Implement Global Trending.
+- Implement language and region filters.
+- Add Rising and Falling sections only when reliable historical data exists.
+- Implement accurate movie categories.
+- Preserve the Stitch design.
+
+Deliverable:
+A functional global-first homepage.
+
+## PHASE 3 — AIOS ORCHESTRATION
+
+- Implement dynamic planning.
+- Implement typed agent contracts.
+- Implement dynamic routing.
+- Implement execution events.
+- Implement failure isolation.
+- Improve general movie research.
+- Preserve the existing chat interface.
+
+Deliverable:
+A genuine multi-agent movie intelligence engine.
+
+## PHASE 4 — EVIDENCE AND RESEARCH
+
+- Build source connectors.
+- Implement evidence objects.
+- Implement retrieval workflows.
+- Implement evidence validation.
+- Implement citations.
+- Improve review synthesis.
+- Implement awards research.
+
+Deliverable:
+An evidence-driven movie research system.
+
+## PHASE 5 — TREND INTELLIGENCE
+
+- Implement persistent snapshot storage if available.
+- Collect permitted source observations.
+- Calculate actual movement.
+- Display source-specific trends.
+- Implement rising/falling classifications.
+- Add regional comparisons only when supported.
+
+Deliverable:
+A transparent trend intelligence system.
+
+## PHASE 6 — INDUSTRY AND WATCHING INTELLIGENCE
+
+- Box-office analysis.
+- Upcoming demand.
+- OTT availability.
+- Cinema discovery.
+- Booking links.
+
+Deliverable:
+Advanced movie intelligence and viewing assistance.
+
+## PHASE 7 — PERSONALISATION AND POLISH
+
+- User preferences.
+- Optional memory.
+- Improved recommendations.
+- Performance optimisation.
+- Accessibility.
+- Responsive design.
+- Final demonstration.
+
+Deliverable:
+A polished CINEMIND AIOS experience.
+
+---
+
+# PART 20 — FINAL ACCEPTANCE CRITERIA
+
+CINEMIND can only be considered a successful AIOS when:
+
+1. Global movie discovery works.
+2. Language filters work accurately.
+3. Tamil search does not return unrelated language results.
+4. New releases are distinguished from classics.
+5. Global trending data is real and correctly labelled.
+6. Rising/falling calculations have actual historical observations.
+7. The AIOS can answer general movie questions.
+8. The orchestrator dynamically selects agents.
+9. Agent execution is real and visible.
+10. Research answers include evidence and source links.
+11. Missing information is disclosed.
+12. Recommendations are relevant and explainable.
+13. OTT information is region-specific and verified or clearly labelled as a search fallback.
+14. All six existing screens remain functional.
+15. The application remains within the approved free development budget.
+16. No API credentials are exposed.
+17. The application does not fabricate information when sources fail.
+
+---
+
+# FINAL EXECUTION INSTRUCTIONS
+
+START WITH PHASE 0.
+
+Do not immediately modify every file.
+
+First produce:
+
+1. Complete current architecture overview.
+2. Actual implemented-feature inventory.
+3. Incomplete-feature inventory.
+4. Critical defect report.
+5. Tamil search root-cause analysis.
+6. TMDB integration diagnosis.
+7. Storage and historical-trend feasibility assessment.
+8. Free-tier data-source feasibility assessment.
+9. File-by-file implementation plan.
+
+After that, implement Phase 0 and test it.
+
+Proceed to Phase 1 only after Phase 0 is verified.
+
+At the end of each phase, report:
+
+- Files changed.
+- Features implemented.
+- Actual API calls tested.
+- Tests passed.
+- Tests failed.
+- Remaining issues.
+- Any external credential or storage dependency.
+- Estimated additional cost (must remain ₹0 unless explicitly approved).
+
+Never report planned features as implemented.
+
+Never generate fake statistics to make the dashboard look populated.
+
+If a data source does not support a requested capability, state that limitation and provide a technically honest alternative.
+
+Keep the existing application operational throughout the upgrade.
+
+## THE FINAL VISION
+
+CINEMIND AIOS should become the place where a movie lover can open one platform and discover:
+
+- What is happening in world cinema.
+- What is trending globally.
+- Which films are gaining or losing attention.
+- What is being released across countries and languages.
+- Which films audiences and critics appreciate.
+- Which movies are winning awards.
+- Which upcoming movies are attracting measurable interest.
+- Why movies succeed or underperform when reliable evidence exists.
+- What to watch based on personal preferences.
+- Where a selected movie can actually be watched.
+
+CINEMIND must be GLOBAL-FIRST, CONSUMER-FIRST, AI-POWERED, EVIDENCE-DRIVEN, TRANSPARENT AND RELIABLE.
+
+Build a real Movie Intelligence Operating System, not merely a movie website with an AI chatbot.

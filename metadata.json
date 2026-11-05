@@ -1,0 +1,8 @@
+{
+  "name": "IndCine",
+  "description": "IndCine — an evidence-led Indian cinema and OTT intelligence operating system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CINEMIND - Quick Pick | Zero Paralysis Decision Engine</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk & Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Container Queries & Forms -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#35343a",
+            "secondary-container": "#ee9800",
+            "surface-bright": "#39383e",
+            "secondary": "#ffb95f",
+            "surface-container-highest": "#35343a",
+            "surface-container": "#1f1f25",
+            "primary-fixed-dim": "#ffb3b6",
+            "inverse-on-surface": "#303036",
+            "surface-container-high": "#2a292f",
+            "inverse-primary": "#be0037",
+            "on-primary-fixed-variant": "#920028",
+            "tertiary-container": "#007ca8",
+            "on-tertiary-fixed": "#001e2c",
+            "on-primary-fixed": "#40000c",
+            "error-container": "#93000a",
+            "on-secondary-fixed": "#2a1700",
+            "on-secondary-fixed-variant": "#653e00",
+            "surface-tint": "#ffb3b6",
+            "on-tertiary-container": "#f8fbff",
+            "on-primary-container": "#fffaf9",
+            "on-surface": "#e4e1e9",
+            "surface-container-lowest": "#0e0e13",
+            "primary-container": "#e11d48",
+            "surface-dim": "#131318",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#1b1b20",
+            "error": "#ffb4ab",
+            "tertiary": "#7bd0ff",
+            "on-secondary": "#472a00",
+            "secondary-fixed": "#ffddb8",
+            "background": "#131318",
+            "on-background": "#e4e1e9",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "outline": "#ac8889",
+            "inverse-surface": "#e4e1e9",
+            "on-error": "#690005",
+            "on-tertiary-fixed-variant": "#004c69",
+            "on-surface-variant": "#e5bdbe",
+            "surface": "#131318",
+            "on-tertiary": "#00354a",
+            "secondary-fixed-dim": "#ffb95f",
+            "tertiary-fixed": "#c4e7ff",
+            "on-secondary-container": "#5b3800",
+            "outline-variant": "#5c3f40",
+            "primary-fixed": "#ffdada",
+            "on-primary": "#68001a",
+            "primary": "#ffb3b6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "0.75rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.25rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Space Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "label-sm": ["Manrope"],
+            "body-md": ["Manrope"],
+            "label-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "headline-lg": ["Space Grotesk"],
+            "body-sm": ["Manrope"],
+            "display-hero-mobile": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .glow-crimson {
+      box-shadow: 0 8px 30px -4px rgba(225, 29, 72, 0.45);
+    }
+    .glow-amber {
+      box-shadow: 0 8px 26px -4px rgba(245, 158, 11, 0.35);
+    }
+    .film-gradient {
+      background: radial-gradient(circle at 50% 0%, rgba(225, 29, 72, 0.12) 0%, rgba(14, 14, 19, 0) 70%);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- ================= TOP APP BAR (Shared Components JSON Anchor) ================= -->
+<header class="bg-surface-container-lowest/90 dark:bg-surface-container-lowest/90 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-lg shadow-black/40">
+<div class="w-full px-gutter max-w-7xl mx-auto flex items-center justify-between h-16">
+<!-- Brand Logo Anchor -->
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface flex items-center gap-2 transition-all duration-200 active:scale-95" href="#">
+<span class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-md shadow-primary-container/40">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">movie_filter</span>
+</span>
+<span>CINEMIND</span>
+</a>
+<!-- Desktop Navigation Links (Quick Pick is ACTIVE) -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">Discover</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">In Theatres</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">Where to Watch</a>
+<!-- Active Link: Quick Pick with exact JSON styles and subtle glow -->
+<a class="text-primary-container dark:text-primary font-label-lg border-b-2 border-primary-container dark:border-primary pb-1 flex items-center gap-1.5 font-bold tracking-wide" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+          Quick Pick
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface hover:bg-surface-variant/40 dark:hover:bg-surface-variant/40 rounded-full px-3 py-1" href="#">Watchlist</a>
+</nav>
+<!-- Right Trailing Controls & Search -->
+<div class="flex items-center gap-3">
+<!-- Search bar on right -->
+<div class="hidden lg:flex items-center relative">
+<span class="material-symbols-outlined text-outline absolute left-3 text-lg" data-icon="search">search</span>
+<input class="bg-surface-container-high/80 text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-full pl-9 pr-4 py-1.5 border border-outline-variant/30 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all w-52" placeholder="Search moods, directors..." type="text"/>
+</div>
+<!-- Trailing Icon Actions from JSON -->
+<button aria-label="Notifications" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-full transition-all" title="Notifications">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button aria-label="Bookmark" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-full transition-all" title="Bookmarks">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+</button>
+<!-- Trailing Primary Action button from JSON -->
+<button class="hidden sm:inline-flex bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-label-lg text-label-lg px-4 py-2 rounded-full transition-all duration-200 active:scale-95 shadow-md shadow-primary-container/30 items-center gap-1.5">
+<span class="material-symbols-outlined text-base">confirmation_number</span>
+          Get Tickets
+        </button>
+<!-- User Profile Avatar from JSON -->
+<div class="w-8 h-8 rounded-full ring-2 ring-outline-variant/40 overflow-hidden flex-shrink-0 cursor-pointer ml-1">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="Editorial portrait avatar of a stylish film enthusiast bathed in soft neon magenta and cinematic dark shadows, modern studio film lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM6qyP8VIVxXp7PwzteVBkmrELhi83qzEjjrEnpMKbckX57xLXy7D067KSSN1o6A3mbF1Yp6UvjIP8c-zKV59OgrjIuPqy2R8l4wJPU66P1mQzklyj8qhJghRtFhIg6mybB_Kpo2PYePDOjZKXzfd6PzJr-dvTmVUfqYx7EWYNNq647bnEwAjizdzdabscSUTjDnvJaQWoLoYQZATUK-2_9OUyR_Qq1H2nTE0xlHKR"/>
+</div>
+</div>
+</div>
+</header>
+<!-- ================= MAIN CONTENT CANVAS ================= -->
+<main class="flex-1 w-full max-w-7xl mx-auto px-gutter py-space-md sm:py-space-lg flex flex-col gap-space-xl">
+<!-- Atmospheric Ambient Hero Glow -->
+<div class="film-gradient absolute top-16 left-0 right-0 h-96 -z-10 pointer-events-none"></div>
+<!-- ================= SECTION 1: HEADER HEADLINE & PHILOSOPHY ================= -->
+<section class="flex flex-col items-center text-center max-w-3xl mx-auto pt-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-secondary font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+        ZERO PARALYSIS DECISION ENGINE
+      </div>
+<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero text-on-surface tracking-tight">
+        Decide in <span class="text-primary-container underline decoration-primary-container/40 underline-offset-8">10 Seconds</span>
+</h1>
+<p class="text-body-md sm:text-body-lg font-body-lg text-on-surface-variant max-w-xl mt-3">
+        Tell CINEMIND your exact mood and constraints, we will calculate your single perfect watch. No endless scroll, no fatigue.
+      </p>
+</section>
+<!-- ================= SECTION 2: INTERACTIVE SELECTION CONTROL DASHBOARD ================= -->
+<section class="bg-surface-container-low/80 backdrop-blur-xl border border-outline-variant/30 rounded-2xl p-4 sm:p-space-lg shadow-xl shadow-black/50">
+<!-- Filter Grid Categories -->
+<div class="space-y-6">
+<!-- 1. Emotional Mood Selector -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-lg font-label-lg text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              1. What is your current emotional mood?
+            </span>
+<span class="text-label-sm font-label-sm text-outline">Single select</span>
+</div>
+<div class="flex flex-wrap gap-2.5">
+<button class="mood-pill active bg-primary-container text-on-primary-container px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 shadow-md shadow-primary-container/30" type="button">
+<span>🌀</span>
+<span>Mind-Bending &amp; Cerebral</span>
+</button>
+<button class="mood-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5" type="button">
+<span>⚡</span>
+<span>Adrenaline Rush &amp; Fast</span>
+</button>
+<button class="mood-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5" type="button">
+<span>☕</span>
+<span>Cozy Wholesome Comfort</span>
+</button>
+<button class="mood-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5" type="button">
+<span>🌙</span>
+<span>Late Night Grim Noir</span>
+</button>
+<button class="mood-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5" type="button">
+<span>💧</span>
+<span>Tear-Jerker &amp; Moving</span>
+</button>
+<button class="mood-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5" type="button">
+<span>😂</span>
+<span>Laugh Out Loud</span>
+</button>
+</div>
+</div>
+<div class="h-px bg-outline-variant/20 w-full"></div>
+<!-- 2. Time & Duration Limit -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-lg font-label-lg text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              2. How much time do you have?
+            </span>
+<span class="text-label-sm font-label-sm text-outline">Runtime filter</span>
+</div>
+<div class="flex flex-wrap gap-2.5">
+<button class="time-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all" type="button">
+              &lt; 90 mins (Snack)
+            </button>
+<button class="time-pill active bg-secondary-container text-on-secondary-container font-bold px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-md shadow-secondary-container/30" type="button">
+              90–120 mins (Standard)
+            </button>
+<button class="time-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all" type="button">
+              120–150 mins (Epic)
+            </button>
+<button class="time-pill bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-4 py-2 rounded-full font-label-md text-label-md transition-all" type="button">
+              No limit
+            </button>
+</div>
+</div>
+<div class="h-px bg-outline-variant/20 w-full"></div>
+<!-- 3 & 4: Era & Language (Responsive 2-Col Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Preferred Era -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-lg font-label-lg text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                3. Preferred Era &amp; Age
+              </span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                Fresh Releases (2023–2025)
+              </button>
+<button class="bg-primary-container text-on-primary-container px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all font-bold" type="button">
+                Modern Classics (2010s)
+              </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                Golden Era Classics
+              </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                Any Era
+              </button>
+</div>
+</div>
+<!-- Language Preference -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-lg font-label-lg text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                4. Language Preference
+              </span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="bg-primary-container text-on-primary-container px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all font-bold" type="button">
+                All Languages
+              </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                English
+              </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                Hindi
+              </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                Malayalam Wave
+              </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                Korean/Asian Cinema
+              </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface border border-outline-variant/30 px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all" type="button">
+                European Indie
+              </button>
+</div>
+</div>
+</div>
+<div class="h-px bg-outline-variant/20 w-full"></div>
+<!-- 5. Platform Availability -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-lg font-label-lg text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              5. Where can you watch right now?
+            </span>
+<span class="text-label-sm font-label-sm text-outline">Multi-select toggles</span>
+</div>
+<div class="flex flex-wrap gap-2.5">
+<!-- Active Netflix -->
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border-2 border-primary-container text-on-surface font-label-md text-label-md shadow-sm" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-bold text-red-500">N</span> Netflix
+            </button>
+<!-- Active Prime -->
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border border-outline-variant/30 hover:border-outline text-on-surface font-label-md text-label-md" type="button">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+              Prime Video
+            </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border border-outline-variant/30 hover:border-outline text-on-surface font-label-md text-label-md" type="button">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+              JioHotstar
+            </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border border-outline-variant/30 hover:border-outline text-on-surface font-label-md text-label-md" type="button">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+              Apple TV
+            </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border border-secondary-container/60 text-secondary font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">theater_comedy</span>
+              In Theatres Now
+            </button>
+</div>
+</div>
+</div>
+<!-- Action Button Area: Calculate -->
+<div class="mt-8 pt-6 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span>Analyzing 18,450 curated theatrical &amp; streaming catalog entries</span>
+</div>
+<button class="w-full sm:w-auto bg-primary-container hover:bg-primary-container/90 text-on-primary-container px-8 py-3.5 rounded-full font-headline-sm text-headline-sm flex items-center justify-center gap-3 glow-crimson transition-all duration-200 active:scale-95 group" id="calc-button">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-180 transition-transform duration-500" data-icon="casino">casino</span>
+<span>CALCULATE MY PERFECT MOVIE</span>
+<span class="material-symbols-outlined text-xl" data-icon="sparkles">arrow_back_ios_new</span>
+</button>
+</div>
+</section>
+<!-- ================= SECTION 3: SOLVED RECOMMENDATION REVEAL CARD ================= -->
+<section class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-flex p-1.5 rounded-full bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Recommendation Calculated</h2>
+</div>
+<span class="text-label-sm font-label-sm text-outline">Engine confidence 99.4%</span>
+</div>
+<!-- The High-Impact Hero Display Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container border border-outline-variant/40 shadow-2xl">
+<!-- Large Movie Backdrop Canvas Overlay -->
+<div class="relative w-full min-h-[480px] lg:min-h-[440px] flex flex-col justify-end p-6 sm:p-8 lg:p-10">
+<!-- Realistic High-Concept Sci-Fi Cinematic Imagery with exact prompt specs -->
+<div class="absolute inset-0 bg-cover bg-center -z-10" data-alt="Cinematic atmospheric still from a high-budget sci-fi cerebral mystery movie. A massive mysterious monolithic obsidian spacecraft hovers silently over misty rolling valleys under a moody overcast twilight sky. Deep obsidian slate tones, subtle warm amber cabin spotlights, and faint crimson warning beacon reflections in high fidelity photorealistic cinematic 35mm grain." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDR-tHPo57Lf3bcI65lw1Hqw6BY0K8zQMJKMtBMUJL7CXCahD8cfqqd12SiuWKpqDc90FKqZ-UCbuYWP6ihlltU9yWJsJXTuz3WbOuSpT_9Srqg-bVhAmb319rgl4dH9-GkhMa82puKmoCA7teWvqG27lo21kp2zXly2XX5ueP3BD99vvcphnhKTYc8Kt53lssLVPimwgo8NqcoUPaIhPlpUkw_BpDdqTwJJbvIDwX1')"></div>
+<!-- Glassmorphism Gradient Overlays to preserve extreme contrast & legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/85 to-surface-container-lowest/30 -z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/60 to-transparent -z-10"></div>
+<!-- Match Pill Badge -->
+<div class="mb-4">
+<span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold glow-crimson">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">psychology</span>
+              99.4% Match for Your Mood: Cerebral + Under 120m + Available on Netflix
+            </span>
+</div>
+<!-- Main Meta & Poster Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+<!-- Left Info Block (Span 8) -->
+<div class="lg:col-span-8 space-y-4">
+<!-- Badges & Ratings -->
+<div class="flex flex-wrap items-center gap-3">
+<span class="bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span>★</span> 8.7 IMDb
+                </span>
+<span class="bg-surface-variant/70 text-on-surface px-2.5 py-0.5 rounded-full font-label-sm text-label-sm border border-outline-variant/30">
+                  2016 • PG-13
+                </span>
+<span class="bg-surface-variant/70 text-on-surface px-2.5 py-0.5 rounded-full font-label-sm text-label-sm border border-outline-variant/30">
+                  1h 56m (116 mins)
+                </span>
+<span class="bg-surface-variant/70 text-on-surface px-2.5 py-0.5 rounded-full font-label-sm text-label-sm border border-outline-variant/30">
+                  Sci-Fi / Drama / Mystery
+                </span>
+<span class="bg-surface-variant/70 text-on-surface px-2.5 py-0.5 rounded-full font-label-sm text-label-sm border border-outline-variant/30">
+                  Dir. Denis Villeneuve
+                </span>
+</div>
+<!-- Main Film Title -->
+<div>
+<h3 class="text-display-hero-mobile sm:text-display-hero font-display-hero text-on-surface tracking-tight leading-none uppercase">
+                  ARRIVAL
+                </h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 max-w-2xl">
+                  Linguistics professor Louise Banks leads an elite team of investigators when gigantic extraterrestrial spaceships touch down across 12 worldwide locations. As humanity teeters on the verge of global war, Banks races against time for answers.
+                </p>
+</div>
+<!-- Why CINEMIND Picked This For You (3 Structured Rationales) -->
+<div class="bg-surface-container-high/70 backdrop-blur-md rounded-xl p-4 border border-outline-variant/30 max-w-2xl space-y-2">
+<div class="text-label-md font-label-md text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+                  Why CINEMIND Picked This For You:
+                </div>
+<ul class="text-body-sm font-body-sm text-on-surface space-y-1 pl-1">
+<li class="flex items-start gap-2">
+<span class="text-primary-container text-xs mt-1">▸</span>
+<span><strong>Mood Alignment:</strong> Directly addresses "Mind-Bending &amp; Cerebral" with non-linear linguistics and high intellectual payoff.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary-container text-xs mt-1">▸</span>
+<span><strong>Runtime Constraint:</strong> Fits cleanly in 116 minutes, adhering to your 90–120 minute weekend threshold.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary-container text-xs mt-1">▸</span>
+<span><strong>Instant Friction-free Access:</strong> Streaming in 4K Dolby Atmos right now on your active Netflix subscription.</span>
+</li>
+</ul>
+</div>
+<!-- Quick Action Conversion Bar -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="bg-primary-container hover:bg-primary-container/90 text-on-primary-container px-6 py-3 rounded-full font-label-lg text-label-lg flex items-center gap-2 glow-crimson transition-all duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  Watch Now on Netflix
+                  <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="bg-secondary-container hover:bg-secondary-container/90 text-on-secondary-container px-5 py-3 rounded-full font-label-lg text-label-lg flex items-center gap-2 glow-amber transition-all duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+                  Book in Theatres
+                </a>
+<button class="bg-surface-variant/80 hover:bg-surface-variant text-on-surface px-4 py-3 rounded-full font-label-lg text-label-lg border border-outline-variant/30 flex items-center gap-1.5 transition-all">
+                  View Full Details
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-outline hover:text-on-surface px-4 py-3 rounded-full font-label-lg text-label-lg border border-outline-variant/30 flex items-center gap-1.5 transition-all active:scale-95">
+<span class="material-symbols-outlined text-lg">casino</span>
+                  Re-roll Another Pick
+                </button>
+</div>
+</div>
+<!-- Right Movie Poster Card Spotlight (Span 4) -->
+<div class="hidden lg:flex lg:col-span-4 justify-end">
+<div class="w-64 rounded-2xl overflow-hidden border border-outline-variant/40 shadow-2xl shadow-black relative group transform hover:-translate-y-1 transition-transform">
+<img alt="Arrival Theatrical Poster" class="w-full h-96 object-cover" data-alt="High contrast 2:3 vertical theatrical movie poster for Arrival. Features a lonely humanoid figure in an orange hazmat suit looking up at an immense smooth alien pebble-shaped shell hovering over misty hills. Dramatic cinematic lighting, high-contrast dark mood, and crisp theatrical typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6l2UZdxYBfKUjk61x1UjG5nJk20IMCu72wAzrZQaO87-9DT-V3lXIzRYaffnOz5N38Ise2Ab7bviMIDgbX7unA9ZuzHhUs1_nIdcfDfPYltdz8nmUtTW0vMYmHizoi-gN6pyUbW0d_Po5e4zBjvoE4b17_tgVrv6nv9eNRooX817ZT2dzJAN6AuDIKPozMmw5uv5dNT8j0G-muz1ZsTc8tVS5j-Zikln_ZoXUjlIs"/>
+<div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-surface-container-lowest to-transparent text-center">
+<span class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Selected 4K Master</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 4: PREVIOUS SUCCESSFUL QUICK PICKS SHELF ================= -->
+<section class="space-y-4 pt-4">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface">Previous Quick Pick Triumphs</h2>
+<p class="text-body-sm font-body-sm text-outline">Community favorite instant matches solved in under 10 seconds.</p>
+</div>
+<a class="text-primary hover:underline text-label-md font-label-md flex items-center gap-1" href="#">
+          View History
+          <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Bento-style Movie Card Shelf -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+<!-- Card 1: Parasite -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col group hover:border-primary-container/60 transition-all hover:shadow-lg">
+<div class="relative aspect-[2/3] overflow-hidden bg-surface-container">
+<img alt="Parasite movie poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Movie poster for Parasite. A modern minimalist luxury architecture lawn with four diverse family members standing motionless with black censorship bars across their eyes. Dark suspenseful evening mood with saturated cinema greens and intense blacks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRzGyhY7cFdwiKUbPw1pCwgG6MM8Y_RZTZi4WQ5Yzjkwf2tq4AOTXOzrsOwaslGvWT14WSsAb1JDqde94vMFB68D53vpQVd_UXwauIH2mThkR0NIm2J5zk0w0EFeZag6HPKcGtjQHkdobyCLqgdWKrFCFF2N1zBrToiCoTuAkLyXFoUZKIb2aGt6iJkvSE3Y4ZF3Ck2Hr9R8CSUCimhW3XyRL0NdrovgaJrYuBZjt_"/>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>★</span> 8.5
+            </div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-primary-container/90 text-on-primary-container font-label-sm text-label-sm">
+              Grim Noir
+            </div>
+</div>
+<div class="p-3 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Parasite</h4>
+<p class="text-body-sm font-body-sm text-outline">2019 • 132m • Prime</p>
+</div>
+</div>
+</div>
+<!-- Card 2: Spider-Man Across the Spider-Verse -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col group hover:border-primary-container/60 transition-all hover:shadow-lg">
+<div class="relative aspect-[2/3] overflow-hidden bg-surface-container">
+<img alt="Spider-Man poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant theatrical movie poster of Spider-Man falling upside down against a neon kaleidoscopic futuristic metropolis cityscape with deep magenta and indigo comic halftone textures. Dynamic modern comic book illumination and dramatic street level glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGOdbfg8m1o7AxQ89-FHbmBO5ZFK1mzjkxi6N2RciuodOihOzpE1UCtvA7v_CmBXdMtO33bxEBNrICFKX_1NAsj2e4C7nt_Q2aG1Xs1mOdOVlhtpqN50iVFGTH-Mk4tzZDHy48XZL6DCX1pNt-rXCg_FWWeJM9KJ2EFG0f8UKvUIXjdvmtNga4VJLSfTRkL597-lpnWJgbR4vsvjCEmZxM7CC5N3bfSkskPVSpswXF"/>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>★</span> 8.6
+            </div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-secondary-container/90 text-on-secondary-container font-label-sm text-label-sm">
+              Adrenaline
+            </div>
+</div>
+<div class="p-3 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Spider-Man: Spider-Verse</h4>
+<p class="text-body-sm font-body-sm text-outline">2023 • 140m • Netflix</p>
+</div>
+</div>
+</div>
+<!-- Card 3: The Grand Budapest Hotel -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col group hover:border-primary-container/60 transition-all hover:shadow-lg">
+<div class="relative aspect-[2/3] overflow-hidden bg-surface-container">
+<img alt="Grand Budapest Hotel poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Symmetrical pastel pink and gold grand alpine luxury resort hotel nestled in misty pine mountains under soft stylized dusk skies. Wes Anderson aesthetic, rich architectural detail and nostalgic cinematic elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2xnhDM_1NGYGo-iYAC9z7v46KCkiPZZc_l6GcYhTL65Ua1rasu5aHNPr3j7m4mwr9xMhUJ0X1iaL-ShMa9x8rh_AZGGzNiNbS2iQigQKxMXpDvTUfRPfkJMBnOcHsT0Tw_Tu90-GLX6KJ6KSNfpwQqhqzc1_loZGH1KxoXcttO-yP9YF36FDY8d3AxGFgUOSNjtkYGSGAT24I-Ey_PzpbWXVUZSUNArzsjpdosjhP"/>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>★</span> 8.1
+            </div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">
+              Cozy Comfort
+            </div>
+</div>
+<div class="p-3 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface truncate group-hover:text-primary transition-colors">The Grand Budapest</h4>
+<p class="text-body-sm font-body-sm text-outline">2014 • 99m • JioHotstar</p>
+</div>
+</div>
+</div>
+<!-- Card 4: Mad Max: Fury Road -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col group hover:border-primary-container/60 transition-all hover:shadow-lg">
+<div class="relative aspect-[2/3] overflow-hidden bg-surface-container">
+<img alt="Mad Max Fury Road poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Harsh golden desert post-apocalyptic cinematic poster showing armored war rig vehicles racing through dust storms against explosive fiery amber horizons. Dramatic gritty cinema still with high octane tactile realism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjB3s-wh8NbArglIC5EYa0wTxcviNR9KyrIlHEVvESiOuLyMMoOmy6mfBRoxynkRdCPy_DWPK2ezDXStybk5lGQiNAan-YreG1PBFRShqCeWp2hsTNjm6Gr3TEReEYqU6TKRczIPJTNy9-jiUmEUnLwN6LOSDhKwQGH82FGe2U_8Qk4uR3LaTadANepObBoY9SoQQuuV4eCLcMo_GRLF1765jkbYO5SpyWOKFheSTq"/>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>★</span> 8.1
+            </div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-primary-container/90 text-on-primary-container font-label-sm text-label-sm">
+              Adrenaline
+            </div>
+</div>
+<div class="p-3 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Mad Max: Fury Road</h4>
+<p class="text-body-sm font-body-sm text-outline">2015 • 120m • Apple TV</p>
+</div>
+</div>
+</div>
+<!-- Card 5: Anatomy of a Fall -->
+<div class="hidden lg:flex bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex-col group hover:border-primary-container/60 transition-all hover:shadow-lg">
+<div class="relative aspect-[2/3] overflow-hidden bg-surface-container">
+<img alt="Anatomy of a Fall poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Intense courtroom drama cinematic poster in snow-capped French Alps chalets. Cold crisp winter daylight reflecting off forensic detectives and brooding protagonist in a dark woolen coat. Somber European art-house aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlNV4ZUv4Q227v-7WZEcxC8J3qlW6_7Jzya7xMhPPMFCdJs3d9oW6Igl0Uhs_r7MChWu5V8quOVyLNWKyD6TfhC8HKrHvdENDK7Q5VO_AA8DeN8_bGOnEgslTUAf7Zj71gP0fyDCIyuK_TSkyI6MtmjOz90Q1VX6EtIfqYg3cW5aH8Y2hQE-H3SIGmE6MLBiDrPDpc1QCYWJUAmWy95WvK15g46iIAcYmezV7vijkp"/>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>★</span> 7.9
+            </div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-surface-variant text-on-surface font-label-sm text-label-sm">
+              Cerebral
+            </div>
+</div>
+<div class="p-3 flex-1 flex flex-col justify-between">
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Anatomy of a Fall</h4>
+<p class="text-body-sm font-body-sm text-outline">2023 • 151m • Theatres</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Components JSON Anchor) ================= -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width border-t border-outline-variant/20 dark:border-outline-variant/20 mt-16">
+<div class="w-full max-w-7xl mx-auto px-gutter py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-lg">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start gap-1">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-primary-container flex items-center justify-center text-on-primary-container text-xs">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">movie_filter</span>
+</span>
+          CINEMIND
+        </span>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant text-center md:text-left">
+          © 2025 CINEMIND Entertainment Inc. All rights reserved. Powered by TMDb &amp; Theatrical Motion Alliance.
+        </p>
+</div>
+<!-- Links from JSON -->
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Partner Theatres</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Streaming Providers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">API &amp; Attribution</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Editorial Charter</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- Micro-interaction JS for pill selections -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mood Pills interactivity
+      const moodPills = document.querySelectorAll('.mood-pill');
+      moodPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          moodPills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-md', 'shadow-primary-container/30');
+            p.classList.add('bg-surface-container-high', 'text-on-surface', 'border', 'border-outline-variant/30');
+          });
+          pill.classList.remove('bg-surface-container-high', 'border', 'border-outline-variant/30');
+          pill.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-md', 'shadow-primary-container/30');
+        });
+      });
+
+      // Time Pills interactivity
+      const timePills = document.querySelectorAll('.time-pill');
+      timePills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          timePills.forEach(p => {
+            p.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-bold', 'shadow-md', 'shadow-secondary-container/30');
+            p.classList.add('bg-surface-container-high', 'text-on-surface', 'border', 'border-outline-variant/30');
+          });
+          pill.classList.remove('bg-surface-container-high', 'border', 'border-outline-variant/30');
+          pill.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-bold', 'shadow-md', 'shadow-secondary-container/30');
+        });
+      });
+
+      // Calculate Button Pulse Feedback
+      const calcBtn = document.getElementById('calc-button');
+      if (calcBtn) {
+        calcBtn.addEventListener('click', () => {
+          calcBtn.classList.add('scale-95');
+          setTimeout(() => {
+            calcBtn.classList.remove('scale-95');
+            window.scrollTo({
+              top: 500,
+              behavior: 'smooth'
+            });
+          }, 200);
+        });
+      }
+    });
+  </script>
+</body></html>

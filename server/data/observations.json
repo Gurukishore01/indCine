@@ -1,0 +1,1328 @@
+{
+  "observations": {
+    "day:1294189": [
+      {
+        "id": "obs_1793870704280_rbv8",
+        "movieId": "1294189",
+        "title": "The Mongoose",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 197.2,
+        "rank": 1,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1423191": [
+      {
+        "id": "obs_1793870704280_ioku",
+        "movieId": "1423191",
+        "title": "Resident Evil",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 406.6,
+        "rank": 2,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1570488": [
+      {
+        "id": "obs_1793870704280_r445",
+        "movieId": "1570488",
+        "title": "A Dog's Perfect Christmas",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 51.7,
+        "rank": 3,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1792170": [
+      {
+        "id": "obs_1793870704280_1htz",
+        "movieId": "1792170",
+        "title": "Model Citizen",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 21.2,
+        "rank": 4,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1375441": [
+      {
+        "id": "obs_1793870704280_zimz",
+        "movieId": "1375441",
+        "title": "Primetime",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 117.3,
+        "rank": 5,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1381071": [
+      {
+        "id": "obs_1793870704280_jvjz",
+        "movieId": "1381071",
+        "title": "Godzilla Minus Zero",
+        "originalLanguage": "ja",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 87.4,
+        "rank": 6,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:656908": [
+      {
+        "id": "obs_1793870704280_nt7s",
+        "movieId": "656908",
+        "title": "Ramayana: Rise of a Legend",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 42.7,
+        "rank": 7,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      },
+      {
+        "id": "obs_1793870766528_z578",
+        "movieId": "656908",
+        "title": "Ramayana: Rise of a Legend",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 42.7,
+        "rank": 1,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      },
+      {
+        "id": "obs_1793871808139_qhg6",
+        "movieId": "656908",
+        "title": "Ramayana: Rise of a Legend",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 42.7,
+        "rank": 2,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      },
+      {
+        "id": "obs_1793872980147_u4uu",
+        "movieId": "656908",
+        "title": "Ramayana: Rise of a Legend",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T10:03:00.147Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 42.7,
+        "rank": 1,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1117898": [
+      {
+        "id": "obs_1793870704280_i8b1",
+        "movieId": "1117898",
+        "title": "The Cat in the Hat",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 37.4,
+        "rank": 8,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1003596": [
+      {
+        "id": "obs_1793870704280_oyms",
+        "movieId": "1003596",
+        "title": "Avengers: Doomsday",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 107.3,
+        "rank": 9,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:791523": [
+      {
+        "id": "obs_1793870704280_v5nk",
+        "movieId": "791523",
+        "title": "Wildwood",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 1088.3,
+        "rank": 10,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1244523": [
+      {
+        "id": "obs_1793870704280_iy3m",
+        "movieId": "1244523",
+        "title": "Beware Boiúna",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 69.3,
+        "rank": 11,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1400940": [
+      {
+        "id": "obs_1793870704280_836y",
+        "movieId": "1400940",
+        "title": "Clayface",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 114.7,
+        "rank": 12,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1507696": [
+      {
+        "id": "obs_1793870704280_2qxl",
+        "movieId": "1507696",
+        "title": "Apocalypse Z: New World",
+        "originalLanguage": "es",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 373.9,
+        "rank": 13,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1283515": [
+      {
+        "id": "obs_1793870704280_9phr",
+        "movieId": "1283515",
+        "title": "Verity",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 205.4,
+        "rank": 14,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:969681": [
+      {
+        "id": "obs_1793870704280_irgp",
+        "movieId": "969681",
+        "title": "Spider-Man: Brand New Day",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 306.1,
+        "rank": 15,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:891621": [
+      {
+        "id": "obs_1793870704280_4azm",
+        "movieId": "891621",
+        "title": "Wild Horse Nine",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 37.5,
+        "rank": 16,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1257147": [
+      {
+        "id": "obs_1793870704280_t8ll",
+        "movieId": "1257147",
+        "title": "My Best Friend",
+        "originalLanguage": "pt",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 36.1,
+        "rank": 17,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1813355": [
+      {
+        "id": "obs_1793870704280_bmpe",
+        "movieId": "1813355",
+        "title": "A Story of Derry",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 231.1,
+        "rank": 18,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1300968": [
+      {
+        "id": "obs_1793870704280_j039",
+        "movieId": "1300968",
+        "title": "The Hunger Games: Sunrise on the Reaping",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 38.8,
+        "rank": 19,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1403676": [
+      {
+        "id": "obs_1793870704280_laz5",
+        "movieId": "1403676",
+        "title": "April X",
+        "originalLanguage": "en",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:25:04.280Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 7.8,
+        "rank": 20,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:ind-leo-2023": [
+      {
+        "id": "obs_1793870766528_tu5g",
+        "movieId": "ind-leo-2023",
+        "title": "Leo",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 48.6,
+        "rank": 2,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:ind-manjummel-2024": [
+      {
+        "id": "obs_1793870766528_88wl",
+        "movieId": "ind-manjummel-2024",
+        "title": "Manjummel Boys",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 42.1,
+        "rank": 3,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:ind-kalki-2024": [
+      {
+        "id": "obs_1793870766528_tecu",
+        "movieId": "ind-kalki-2024",
+        "title": "Kalki 2898 AD",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 62.4,
+        "rank": 4,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:ind-aavesham-2024": [
+      {
+        "id": "obs_1793870766528_91h6",
+        "movieId": "ind-aavesham-2024",
+        "title": "Aavesham",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 39.8,
+        "rank": 5,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:ind-stree2-2024": [
+      {
+        "id": "obs_1793870766528_wnm2",
+        "movieId": "ind-stree2-2024",
+        "title": "Stree 2",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 58.2,
+        "rank": 6,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:ind-amaran-2024": [
+      {
+        "id": "obs_1793870766528_4fen",
+        "movieId": "ind-amaran-2024",
+        "title": "Amaran",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 49.5,
+        "rank": 7,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:ind-kantara-2022": [
+      {
+        "id": "obs_1793870766528_121s",
+        "movieId": "ind-kantara-2022",
+        "title": "Kantara",
+        "originalLanguage": "kn",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:26:06.527Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 44.8,
+        "rank": 8,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1453407": [
+      {
+        "id": "obs_1793871808139_30ty",
+        "movieId": "1453407",
+        "title": "Gajab Raat",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 91.9,
+        "rank": 1,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1515692": [
+      {
+        "id": "obs_1793871808139_td00",
+        "movieId": "1515692",
+        "title": "Baththa",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 34.2,
+        "rank": 3,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1389172": [
+      {
+        "id": "obs_1793871808139_tv12",
+        "movieId": "1389172",
+        "title": "Reporting Live",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 30.2,
+        "rank": 4,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1234139": [
+      {
+        "id": "obs_1793871808139_b5m1",
+        "movieId": "1234139",
+        "title": "Jailer 2",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 21,
+        "rank": 5,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1618200": [
+      {
+        "id": "obs_1793871808139_hkyo",
+        "movieId": "1618200",
+        "title": "The Dark Heaven",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 17.2,
+        "rank": 6,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1456196": [
+      {
+        "id": "obs_1793871808139_3u65",
+        "movieId": "1456196",
+        "title": "Thella Kaagitham",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 16.7,
+        "rank": 7,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1261763": [
+      {
+        "id": "obs_1793871808139_a6dy",
+        "movieId": "1261763",
+        "title": "Don't Trouble the Trouble",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 14.8,
+        "rank": 8,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1291608": [
+      {
+        "id": "obs_1793871808139_c6jk",
+        "movieId": "1291608",
+        "title": "Dhurandhar",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 15.4,
+        "rank": 9,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1802464": [
+      {
+        "id": "obs_1793871808139_7umt",
+        "movieId": "1802464",
+        "title": "Meethe Mein Kya Hai",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 14.9,
+        "rank": 10,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1376856": [
+      {
+        "id": "obs_1793871808139_tcp6",
+        "movieId": "1376856",
+        "title": "The Paradise",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 14.1,
+        "rank": 11,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1378537": [
+      {
+        "id": "obs_1793871808139_xunc",
+        "movieId": "1378537",
+        "title": "Mirzapur: The Movie",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 14,
+        "rank": 12,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1213243": [
+      {
+        "id": "obs_1793871808139_1eb2",
+        "movieId": "1213243",
+        "title": "Toxic",
+        "originalLanguage": "kn",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 14.3,
+        "rank": 13,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:921711": [
+      {
+        "id": "obs_1793871808139_udmj",
+        "movieId": "921711",
+        "title": "Tamil Rockers",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 12.9,
+        "rank": 14,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1408162": [
+      {
+        "id": "obs_1793871808139_34xg",
+        "movieId": "1408162",
+        "title": "Vishwanath & Sons",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 11.8,
+        "rank": 15,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1465943": [
+      {
+        "id": "obs_1793871808139_9gq9",
+        "movieId": "1465943",
+        "title": "Mandaadi",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 11,
+        "rank": 16,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:579974": [
+      {
+        "id": "obs_1793871808139_313x",
+        "movieId": "579974",
+        "title": "RRR",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 10.7,
+        "rank": 17,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1269325": [
+      {
+        "id": "obs_1793871808139_d22b",
+        "movieId": "1269325",
+        "title": "Drishyam: The Conclusion",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 10.4,
+        "rank": 18,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1451944": [
+      {
+        "id": "obs_1793871808139_qv15",
+        "movieId": "1451944",
+        "title": "Lust Stories 3",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 10.7,
+        "rank": 19,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1389379": [
+      {
+        "id": "obs_1793871808139_bzfn",
+        "movieId": "1389379",
+        "title": "Ranabaali",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:28.139Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 10.2,
+        "rank": 20,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:811941": [
+      {
+        "id": "obs_1793871814249_u1ib",
+        "movieId": "811941",
+        "title": "Devara: Part 1",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 4.4,
+        "rank": 1,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1160018": [
+      {
+        "id": "obs_1793871814250_e6ys",
+        "movieId": "1160018",
+        "title": "KILL",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 4.6,
+        "rank": 2,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:801688": [
+      {
+        "id": "obs_1793871814250_130f",
+        "movieId": "801688",
+        "title": "Kalki 2898-AD",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 3.7,
+        "rank": 3,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:784651": [
+      {
+        "id": "obs_1793871814250_w54k",
+        "movieId": "784651",
+        "title": "Fighter",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 4.2,
+        "rank": 4,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1239511": [
+      {
+        "id": "obs_1793871814250_g5py",
+        "movieId": "1239511",
+        "title": "Lucky Baskhar",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 4.3,
+        "rank": 5,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:927342": [
+      {
+        "id": "obs_1793871814250_l95r",
+        "movieId": "927342",
+        "title": "Amaran",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 3.6,
+        "rank": 6,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1118224": [
+      {
+        "id": "obs_1793871814250_71os",
+        "movieId": "1118224",
+        "title": "Maharaja",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 3.5,
+        "rank": 7,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1014214": [
+      {
+        "id": "obs_1793871814250_37fh",
+        "movieId": "1014214",
+        "title": "Singham Again",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 3.1,
+        "rank": 8,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1329146": [
+      {
+        "id": "obs_1793871814250_fc0t",
+        "movieId": "1329146",
+        "title": "EVOL",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.8,
+        "rank": 9,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1186350": [
+      {
+        "id": "obs_1793871814250_8e97",
+        "movieId": "1186350",
+        "title": "Marco",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.9,
+        "rank": 10,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:472221": [
+      {
+        "id": "obs_1793871814250_3gts",
+        "movieId": "472221",
+        "title": "The Goat Life",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 3.3,
+        "rank": 11,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1149791": [
+      {
+        "id": "obs_1793871814250_l5ds",
+        "movieId": "1149791",
+        "title": "Premalu",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.7,
+        "rank": 12,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:927547": [
+      {
+        "id": "obs_1793871814250_0f0b",
+        "movieId": "927547",
+        "title": "All We Imagine as Light",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.7,
+        "rank": 13,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1045931": [
+      {
+        "id": "obs_1793871814250_wbqh",
+        "movieId": "1045931",
+        "title": "Crew",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.7,
+        "rank": 14,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1321821": [
+      {
+        "id": "obs_1793871814250_clq8",
+        "movieId": "1321821",
+        "title": "Pechi",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.6,
+        "rank": 15,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:857598": [
+      {
+        "id": "obs_1793871814250_a6jg",
+        "movieId": "857598",
+        "title": "Pushpa 2 - The Rule",
+        "originalLanguage": "te",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.7,
+        "rank": 16,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:932247": [
+      {
+        "id": "obs_1793871814250_t95v",
+        "movieId": "932247",
+        "title": "Mafia",
+        "originalLanguage": "kn",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.3,
+        "rank": 17,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1166133": [
+      {
+        "id": "obs_1793871814250_b5ge",
+        "movieId": "1166133",
+        "title": "Bramayugam",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.4,
+        "rank": 18,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1311214": [
+      {
+        "id": "obs_1793871814250_c4au",
+        "movieId": "1311214",
+        "title": "Thursday Special",
+        "originalLanguage": "hi",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.1,
+        "rank": 19,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1274311": [
+      {
+        "id": "obs_1793871814250_seq4",
+        "movieId": "1274311",
+        "title": "Oru Anweshanathinte Thudakkam",
+        "originalLanguage": "ml",
+        "provider": "TMDB API v3 Trending",
+        "observedAt": "2026-11-05T09:43:34.249Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 2.3,
+        "rank": 20,
+        "region": "India / Global",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1685882": [
+      {
+        "id": "obs_1793871997158_oakp",
+        "movieId": "1685882",
+        "title": "Modha Rathri",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 9,
+        "rank": 7,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1235877": [
+      {
+        "id": "obs_1793871997158_8u4k",
+        "movieId": "1235877",
+        "title": "Jana Nayagan",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 7.9,
+        "rank": 8,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1505305": [
+      {
+        "id": "obs_1793871997158_vbg2",
+        "movieId": "1505305",
+        "title": "Immortal",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 7.8,
+        "rank": 9,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1578079": [
+      {
+        "id": "obs_1793871997158_ne4r",
+        "movieId": "1578079",
+        "title": "Dorothy",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 7.7,
+        "rank": 10,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1402181": [
+      {
+        "id": "obs_1793871997158_bdev",
+        "movieId": "1402181",
+        "title": "Scene",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 7.4,
+        "rank": 11,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1395215": [
+      {
+        "id": "obs_1793871997158_261c",
+        "movieId": "1395215",
+        "title": "Sigma",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 7.1,
+        "rank": 12,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1515729": [
+      {
+        "id": "obs_1793871997158_p4sr",
+        "movieId": "1515729",
+        "title": "Blast",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 7.3,
+        "rank": 13,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1479832": [
+      {
+        "id": "obs_1793871997158_f8dj",
+        "movieId": "1479832",
+        "title": "DC",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 6.7,
+        "rank": 14,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1367220": [
+      {
+        "id": "obs_1793871997158_dm3p",
+        "movieId": "1367220",
+        "title": "Karuppu",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 6.1,
+        "rank": 15,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1088615": [
+      {
+        "id": "obs_1793871997158_gp8s",
+        "movieId": "1088615",
+        "title": "Anaagarigam",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 5.6,
+        "rank": 16,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1509599": [
+      {
+        "id": "obs_1793871997158_mbef",
+        "movieId": "1509599",
+        "title": "Gatta Kusthi 2",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 5.4,
+        "rank": 17,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1655020": [
+      {
+        "id": "obs_1793871997158_t7p9",
+        "movieId": "1655020",
+        "title": "John Doe",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 4.5,
+        "rank": 18,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:1432631": [
+      {
+        "id": "obs_1793871997158_82s1",
+        "movieId": "1432631",
+        "title": "Idhayam Murali",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 4.6,
+        "rank": 19,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ],
+    "day:937020": [
+      {
+        "id": "obs_1793871997158_0fse",
+        "movieId": "937020",
+        "title": "Jailer",
+        "originalLanguage": "ta",
+        "provider": "TMDB API v3 Trending (Filtered by Indian Original Languages)",
+        "observedAt": "2026-11-05T09:46:37.158Z",
+        "metricName": "tmdb_popularity_index",
+        "metricValue": 4.5,
+        "rank": 20,
+        "region": "Global / Indian Languages (ta, te, ml, kn, hi, bn, mr, pa)",
+        "window": "day",
+        "sourceReference": "https://api.themoviedb.org/3/trending/movie/day"
+      }
+    ]
+  },
+  "totalSnapshotsTaken": 6,
+  "lastSnapshotAt": "2026-11-05T10:03:00.147Z"
+}

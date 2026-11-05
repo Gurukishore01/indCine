@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CINEMIND — Search &amp; Discovery</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#35343a",
+            "secondary-container": "#ee9800",
+            "surface-bright": "#39383e",
+            "secondary": "#ffb95f",
+            "surface-container-highest": "#35343a",
+            "surface-container": "#1f1f25",
+            "primary-fixed-dim": "#ffb3b6",
+            "inverse-on-surface": "#303036",
+            "surface-container-high": "#2a292f",
+            "inverse-primary": "#be0037",
+            "on-primary-fixed-variant": "#920028",
+            "tertiary-container": "#007ca8",
+            "on-tertiary-fixed": "#001e2c",
+            "on-primary-fixed": "#40000c",
+            "error-container": "#93000a",
+            "on-secondary-fixed": "#2a1700",
+            "on-secondary-fixed-variant": "#653e00",
+            "surface-tint": "#ffb3b6",
+            "on-tertiary-container": "#f8fbff",
+            "on-primary-container": "#fffaf9",
+            "on-surface": "#e4e1e9",
+            "surface-container-lowest": "#0e0e13",
+            "primary-container": "#e11d48",
+            "surface-dim": "#131318",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#1b1b20",
+            "error": "#ffb4ab",
+            "tertiary": "#7bd0ff",
+            "on-secondary": "#472a00",
+            "secondary-fixed": "#ffddb8",
+            "background": "#131318",
+            "on-background": "#e4e1e9",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "outline": "#ac8889",
+            "inverse-surface": "#e4e1e9",
+            "on-error": "#690005",
+            "on-tertiary-fixed-variant": "#004c69",
+            "on-surface-variant": "#e5bdbe",
+            "surface": "#131318",
+            "on-tertiary": "#00354a",
+            "secondary-fixed-dim": "#ffb95f",
+            "tertiary-fixed": "#c4e7ff",
+            "on-secondary-container": "#5b3800",
+            "outline-variant": "#5c3f40",
+            "primary-fixed": "#ffdada",
+            "on-primary": "#68001a",
+            "primary": "#ffb3b6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "0.75rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.25rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": [
+              "Space Grotesk"
+            ],
+            "headline-lg-mobile": [
+              "Space Grotesk"
+            ],
+            "headline-sm": [
+              "Space Grotesk"
+            ],
+            "headline-md": [
+              "Space Grotesk"
+            ],
+            "label-sm": [
+              "Manrope"
+            ],
+            "body-md": [
+              "Manrope"
+            ],
+            "label-md": [
+              "Manrope"
+            ],
+            "body-lg": [
+              "Manrope"
+            ],
+            "label-lg": [
+              "Manrope"
+            ],
+            "headline-lg": [
+              "Space Grotesk"
+            ],
+            "body-sm": [
+              "Manrope"
+            ],
+            "display-hero-mobile": [
+              "Space Grotesk"
+            ]
+          },
+          "fontSize": {
+            "display-hero": [
+              "48px",
+              {
+                "lineHeight": "56px",
+                "letterSpacing": "-0.03em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg-mobile": [
+              "24px",
+              {
+                "lineHeight": "32px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-sm": [
+              "18px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "22px",
+              {
+                "lineHeight": "28px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-sm": [
+              "10px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.06em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "400"
+              }
+            ],
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-lg": [
+              "16px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "18px",
+                "letterSpacing": "0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg": [
+              "32px",
+              {
+                "lineHeight": "40px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-sm": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "fontWeight": "400"
+              }
+            ],
+            "display-hero-mobile": [
+              "32px",
+              {
+                "lineHeight": "38px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "700"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0e0e13;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #35343a;
+      border-radius: 9999px;
+    }
+    .glow-crimson:hover {
+      box-shadow: 0 0 20px -2px rgba(225, 29, 72, 0.45);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen antialiased flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- ========================================== -->
+<!-- TOP NAVIGATION BAR (Shared Component)      -->
+<!-- ========================================== -->
+<header class="docked full-width top-0 sticky z-50 bg-surface-container-lowest/90 dark:bg-surface-container-lowest/90 backdrop-blur-md shadow-lg shadow-black/40">
+<div class="w-full px-gutter max-w-7xl mx-auto flex items-center justify-between h-16">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface flex items-center gap-2" href="#">
+<span class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-md shadow-primary-container/30">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">movie_filter</span>
+</span>
+<span class="tracking-wider">CINEMIND</span>
+</a>
+<!-- Desktop Nav Links: Semantic active determination = Discover (nearest to Search & Discovery) -->
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-primary-container dark:text-primary font-label-lg border-b-2 border-primary-container dark:border-primary pb-1 transition-all duration-200" href="#">
+          Discover
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">
+          In Theatres
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">
+          Where to Watch
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">
+          Quick Pick
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-lg transition-colors hover:text-on-surface dark:hover:text-on-surface" href="#">
+          Watchlist
+        </a>
+</nav>
+<!-- Trailing Action Cluster & Search Bar (search_bar: on_right) -->
+<div class="flex items-center space-x-3">
+<!-- Search icon cue for quick trigger -->
+<div class="hidden lg:flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-full border border-outline-variant/30 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span class="text-label-md font-label-md">Press <kbd class="px-1.5 py-0.5 text-[10px] bg-surface-container-lowest rounded border border-outline-variant/40 text-on-surface">⌘K</kbd></span>
+</div>
+<button aria-label="Notifications" class="p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button aria-label="Bookmarks" class="p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+<!-- Trailing Primary Action -->
+<button class="hidden sm:inline-flex items-center gap-1.5 bg-secondary-container hover:bg-secondary text-on-secondary-container font-label-lg px-4 py-2 rounded-full transition-all duration-200 active:scale-95 shadow-md shadow-secondary-container/20">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+<span>Get Tickets</span>
+</button>
+<!-- User Profile Avatar -->
+<button class="w-8 h-8 rounded-full ring-2 ring-outline-variant/30 overflow-hidden flex items-center justify-center bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up cinematic headshot avatar of an artistic young film director with stylish dark hair and warm theatrical ambient rim lighting in deep indigo and crimson tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYGKIowXJGHFcYY4QGjtT5nZLXKQMFymXDnmOgq6T-yQxQK70moYSB-djPomH7ra1MshIOxfQY8JYOOBCbtwLHeWrd5FPf10F5g8VDyIWkkKUCGJn_nRZttvafuJIHhBmNwbs-edLz-ApgZZpzOgMRBKkRMYNyZGI-KAYAgJo8Q2XuxTZjcZ_xLSfdgxCirtHL3l5dqUG5fpXl-cTDN9IgQEWc4rMLRlIIPIwt9OMA"/>
+</button>
+</div>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- MAIN HERO DISCOVERY & SEARCH CANVAS       -->
+<!-- ========================================== -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-gutter py-space-md md:py-space-lg flex flex-col gap-space-lg">
+<!-- Hero Search Interface Section -->
+<section class="flex flex-col gap-space-md pt-2">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="text-label-md font-label-md uppercase tracking-wider text-secondary-container flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+            Smart Cinephile Query Matrix
+          </span>
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">
+            Find Movies You'll Enjoy <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Without the Hassle</span>
+</h1>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">
+          Deep theatrical indexes, cross-platform streaming availability, and tailored mood matching across 40,000+ titles.
+        </p>
+</div>
+<!-- Prominent Search Bar with Glassmorphic Obsidian Styling -->
+<div class="relative w-full rounded-2xl p-1.5 bg-gradient-to-r from-outline-variant/40 via-surface-container-high/60 to-outline-variant/20 shadow-2xl backdrop-blur-xl">
+<div class="relative flex items-center bg-surface-container-lowest/95 rounded-xl px-4 py-3 md:py-3.5 border border-white/5 transition-all focus-within:border-primary-container focus-within:ring-2 focus-within:ring-primary-container/30">
+<span class="material-symbols-outlined text-primary text-[24px] mr-3">search</span>
+<input class="w-full bg-transparent border-none outline-none text-on-surface font-body-lg text-body-lg placeholder:text-on-surface-variant/60 focus:ring-0 p-0" placeholder="Search by title, director, thematic vibe, actor, or studio..." type="text" value="Denis Villeneuve"/>
+<div class="flex items-center gap-2 pl-3 border-l border-outline-variant/20">
+<!-- Clear Button -->
+<button aria-label="Clear search input" class="p-1 text-on-surface-variant hover:text-on-surface rounded-full transition-colors">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+<!-- Voice Search -->
+<button aria-label="Voice Search" class="p-1.5 text-on-surface-variant hover:text-primary transition-colors rounded-lg bg-surface-container/60 hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+<!-- Cmd+K Cue -->
+<div class="hidden sm:flex items-center gap-1 px-2 py-1 bg-surface-container-high rounded-md border border-outline-variant/40 text-on-surface-variant text-label-sm font-label-sm">
+<span class="text-[11px]">⌘K</span>
+</div>
+<!-- Filter Modal/Drawer Toggle Action -->
+<button class="flex items-center gap-1.5 bg-primary-container hover:bg-primary-container/90 text-on-primary-container px-3.5 py-1.5 rounded-lg text-label-md font-label-md transition-all active:scale-95 shadow-md shadow-primary-container/20">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="hidden md:inline">Filters</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recent Searches & Interactive Suggestions -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-2 pt-1">
+<span class="text-label-sm font-label-sm uppercase text-on-surface-variant tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+          Recent:
+        </span>
+<div class="flex flex-wrap items-center gap-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-body-sm font-body-sm text-on-surface border border-outline-variant/30 hover:border-outline transition-colors">
+<span>Oppenheimer</span>
+<button class="hover:text-primary flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-body-sm font-body-sm text-on-surface border border-primary-container/50 bg-primary-container/10 text-primary">
+<span>Denis Villeneuve</span>
+<button class="hover:text-on-surface flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-body-sm font-body-sm text-on-surface border border-outline-variant/30 hover:border-outline transition-colors">
+<span>Cyberpunk Anime</span>
+<button class="hover:text-primary flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-body-sm font-body-sm text-on-surface border border-outline-variant/30 hover:border-outline transition-colors">
+<span>Malayalam Thrillers</span>
+<button class="hover:text-primary flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</div>
+</div>
+</div>
+<!-- Trending Searches This Weekend -->
+<div class="flex items-center gap-3 overflow-x-auto pb-1 custom-scrollbar text-body-sm font-body-sm">
+<span class="shrink-0 flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+          Trending Now:
+        </span>
+<a class="shrink-0 px-2.5 py-1 rounded-md bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5 border border-outline-variant/20" href="#">
+<span>Dune: Part Two</span>
+<span class="px-1 text-[10px] bg-primary-container/20 text-primary font-bold rounded">HOT</span>
+</a>
+<a class="shrink-0 px-2.5 py-1 rounded-md bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1 border border-outline-variant/20" href="#">
+<span>Nosferatu (2024)</span>
+</a>
+<a class="shrink-0 px-2.5 py-1 rounded-md bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5 border border-outline-variant/20" href="#">
+<span>Aavesham</span>
+<span class="px-1 text-[10px] bg-secondary-container/20 text-secondary font-bold rounded">TOP 10</span>
+</a>
+<a class="shrink-0 px-2.5 py-1 rounded-md bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1 border border-outline-variant/20" href="#">
+<span>Poor Things</span>
+</a>
+<a class="shrink-0 px-2.5 py-1 rounded-md bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1 border border-outline-variant/20" href="#">
+<span>Challengers</span>
+</a>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- ADVANCED FILTER MATRIX (Pills & Dropdowns) -->
+<!-- ========================================== -->
+<section class="bg-surface-container-lowest/80 rounded-2xl p-space-md border border-outline-variant/20 flex flex-col gap-space-md">
+<!-- Primary Tier: Mood / Genre Pills -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider">Mood &amp; Genre Spectrum</span>
+<span class="text-body-sm font-body-sm text-secondary cursor-pointer hover:underline">Reset Matrix</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1.5 custom-scrollbar">
+<button class="shrink-0 px-4 py-1.5 rounded-full text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface border border-outline-variant/30 transition-all">
+            All Genres
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full text-label-md font-label-md bg-primary-container text-on-primary-container shadow-sm shadow-primary-container/40">
+            Sci-Fi Mindbender
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface border border-outline-variant/30 hover:border-outline transition-all">
+            Psychological Thriller
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface border border-outline-variant/30 hover:border-outline transition-all">
+            Gritty Action
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface border border-outline-variant/30 hover:border-outline transition-all">
+            Horror &amp; Occult
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface border border-outline-variant/30 hover:border-outline transition-all">
+            Neo-Noir Crime
+          </button>
+<button class="shrink-0 px-4 py-1.5 rounded-full text-label-md font-label-md bg-surface-container text-on-surface-variant hover:text-on-surface border border-outline-variant/30 hover:border-outline transition-all">
+            Cerebral Drama
+          </button>
+</div>
+</div>
+<!-- Secondary Filter Row: Language, Period, Rating, Availability & Sorting -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 pt-2 border-t border-outline-variant/20">
+<!-- Language Selector -->
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Language / Origin</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg py-2 pl-3 pr-8 border border-outline-variant/30 focus:border-primary-container focus:ring-0 appearance-none">
+<option>All Languages</option>
+<option selected="">English</option>
+<option>Malayalam</option>
+<option>Hindi</option>
+<option>Japanese</option>
+<option>Korean</option>
+<option>Spanish / European</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Release Period -->
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Release Period</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg py-2 pl-3 pr-8 border border-outline-variant/30 focus:border-primary-container focus:ring-0 appearance-none">
+<option>All Eras</option>
+<option selected="">2020 — 2025</option>
+<option>2010s Epoch</option>
+<option>2000s Modern</option>
+<option>90s Classics</option>
+<option>Golden Age (Pre-1980)</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Minimum Rating -->
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Critical Score</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg py-2 pl-3 pr-8 border border-outline-variant/30 focus:border-primary-container focus:ring-0 appearance-none">
+<option>Any Rating</option>
+<option selected="">★ 8.0+ IMDb / 85%+ RT</option>
+<option>★ 7.5+ High Quality</option>
+<option>★ 7.0+ Recommended</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Watch Availability -->
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Where to Watch</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg py-2 pl-3 pr-8 border border-outline-variant/30 focus:border-primary-container focus:ring-0 appearance-none">
+<option selected="">Any Availability</option>
+<option>Now in Theatres (IMAX/Dolby)</option>
+<option>Streaming Included (OTT)</option>
+<option>Rent / Digital Buy</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Sorting -->
+<div class="flex flex-col gap-1 col-span-2 sm:col-span-1">
+<label class="text-label-sm font-label-sm text-secondary font-bold">Sort Results By</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high text-secondary text-label-md font-label-md rounded-lg py-2 pl-3 pr-8 border border-secondary-container/40 focus:border-secondary focus:ring-0 appearance-none font-bold">
+<option selected="">Highest Relevance</option>
+<option>Highest IMDb Rating</option>
+<option>Release Date: Newest</option>
+<option>Box Office Impact</option>
+<option>Runtime: Short to Long</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-secondary absolute right-2.5 top-2.5 pointer-events-none">sort</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SEARCH STATS & ACTIVE RESULT HEADER        -->
+<!-- ========================================== -->
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-3">
+<div class="flex items-center gap-2">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Denis Villeneuve Spectrum</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm">
+          9 Titles Found
+        </span>
+</div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span>Grid View</span>
+<button class="p-1 rounded bg-surface-container text-on-surface"><span class="material-symbols-outlined text-[18px]">grid_view</span></button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[18px]">view_agenda</span></button>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- MOVIE RESULTS GRID (Bento / Theatrical Cards) -->
+<!-- ========================================== -->
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-md">
+<!-- CARD 1: Dune: Part Two -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<!-- Poster Frame (2:3 Aspect) -->
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Dune Part Two cinematic dramatic movie poster showing Paul Atreides and Chani standing against massive orange Arrakis desert sand dunes under a harsh golden sun with spice glimmers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQzn0x_dtfFRQOYeuXzZKZS_ptplZtoZPq2wGVeXBQTCqD7ttTNfDRjGDES-h8MV3Z4jUjyBYMoM8yaDrW5FTjKHmf9skWvRxMZFYFSeY_e7ht0JO69fYB8gQhhgxNFgL3oBbQEEx77yepbwpH_7jL3BNpjsDP97JxuArL84gZaibh9S1S5deLomsc_II7sXXHxXb1GGVIO-PB1FCV9afTCotJ7hZqxfoPDaXpTn-n"/>
+<!-- Gradient Vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<!-- Top Badges & Action -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-auto">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-primary-container text-on-primary-container font-bold tracking-wider">
+              IN THEATRES &amp; IMAX
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<!-- Bottom Rating & Match Pill -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">8.6</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              98% Match
+            </span>
+</div>
+</div>
+<!-- Metadata Information -->
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between gap-1">
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+                Dune: Part Two
+              </h3>
+</div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2024</span>
+<span>•</span>
+<span>2h 46m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">PG-13</span>
+</div>
+</div>
+<!-- Streaming Provider Row & CTA -->
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5" title="Available on Max &amp; Apple TV">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">MAX</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Apple TV</span>
+</div>
+<button class="text-label-md font-label-md text-secondary hover:text-secondary-fixed flex items-center gap-0.5">
+              Tickets <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Blade Runner 2049 -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Blade Runner 2049 moody sci-fi poster showing Officer K standing beside a neon cyberpunk spinner vehicle in a dense foggy orange Las Vegas ruins dust storm with giant statues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnYuQ7rrgDwYCOwVmeULvuNUOB9ZLdvbB8WWc0BvHRLKddoZcHAfvX4bVYDeqwPeRw4f2XuLSwpdU8eHPG_4sVmhlGRLu7vjxyY45a0pBNZSeettpI4eRkleVEQ5aXWCQfulh861ZJZVz-AzxwLjENlCxCIx9qvecwUmrlcTHOjufGT8hrB89mQ2JgywPg_g0y-2GgrgC5raVo3_KdhFOdEh_4h6oDlEEByZM9Hzwo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-highest/90 text-on-surface font-semibold tracking-wider backdrop-blur-md">
+              STREAMING OTT
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">8.0</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              96% Match
+            </span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Blade Runner 2049
+            </h3>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2017</span>
+<span>•</span>
+<span>2h 44m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">R</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Netflix</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Prime</span>
+</div>
+<button class="text-label-md font-label-md text-primary hover:text-primary-fixed flex items-center gap-0.5">
+              Watch Now <span class="material-symbols-outlined text-[14px]">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Arrival -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Arrival atmospheric movie poster featuring a massive monolithic elliptical alien spacecraft hovering quietly over a serene green misty Montana valley landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-jGLRRaz2JxvzyB_iPG4lJk8qkuRGKuSmZ3Il_0xJac30FC3DZy-o7leDcfb5Ib8cI1yomsw4i-wOtBo7-oh1wagm2vIT9FtVv9AW2twlNpFMFIuuOYfG3I3YPBPO3RgCxakgZcjvUeNzdgTj9mZxb5zH1wXXzjZWBmdz3gscxhASmOezTrdMnIswN2pPZpCYNmjf6Mq-JP_7OLHWN-Uf1gjqhggKA1orvw-lcv37"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-tertiary-container text-on-tertiary-container font-semibold tracking-wider">
+              4K REMASTER
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">7.9</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              95% Match
+            </span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Arrival
+            </h3>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2016</span>
+<span>•</span>
+<span>1h 56m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">PG-13</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Paramount+</span>
+</div>
+<button class="text-label-md font-label-md text-primary hover:text-primary-fixed flex items-center gap-0.5">
+              Watch Now <span class="material-symbols-outlined text-[14px]">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Sicario -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Sicario movie visual showing silhouette tactical border police operations in harsh twilight sun in the Chihuahuan desert with high tension cinematography and dust clouds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSendlVTVQjgQvQDvgB22G2skhLEK5Alk5lrufOBvhT8dt3PScBJsDwD9VaTUK3qlSYSC4NrT0tUWhODIJXRpuYewHxZdf0u66J7hlnWrcYMDdr7UF4c9OEZrLMmYURjErRO_x_yqrfxla0adQT7iLidZ13YZ6nSgb6SaVdtHYa-nigbK5eAgwmG6ic6lEYjcji5tmtfuFLFAvflhUmZ24aQFXPDBSokc95o9Ny2HU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-highest/90 text-on-surface font-semibold tracking-wider">
+              RENT / BUY
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">7.7</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              92% Match
+            </span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Sicario
+            </h3>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2015</span>
+<span>•</span>
+<span>2h 01m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">R</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Prime Video</span>
+</div>
+<button class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-0.5">
+              Options <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 5: Prisoners -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Prisoners psychological thriller movie still of rain slicked dark suburban pavement with intense rainy overcast atmosphere and grim dramatic suspense lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmk5AOmNA1uRqVcjACN5gYo6y7hsTDoOou-BsdmAsLlmAA9QMRzTcmFXrEeL5SNV7PcWGeWW3ISbeXU-jASNCs_yq0-9O6vSRtMNo7kZ5e9Ota116sC437Xs24P7iFQlsszbBMJVWY9tEcyRyUz9n-vvvkq9e4J4PaETb1XZYaf4j1nKUdFYLBRiGs-seM6ypYYATiF17U9FEo2x1RsOUWV0tBqxPNeBnmmg_m5C-p"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-highest/90 text-on-surface font-semibold tracking-wider">
+              STREAMING OTT
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">8.2</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              94% Match
+            </span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Prisoners
+            </h3>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2013</span>
+<span>•</span>
+<span>2h 33m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">R</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Netflix</span>
+</div>
+<button class="text-label-md font-label-md text-primary hover:text-primary-fixed flex items-center gap-0.5">
+              Watch Now <span class="material-symbols-outlined text-[14px]">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 6: Incendies -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Incendies poetic cinematic movie shot depicting a solitary figure walking past arid Middle Eastern desert landscape with dramatic poignant evening light and artistic framing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gRM1DyfBggsG_pwpf6yhT-Fr9hcJ-ta1oP6b_1DlXC5EpZRrh4kWGrNOWX0DZnuHCfPY73Zz5dGiiGz1YvqnsojqzbrnsXjuTy6WLtQWc_4iyqkmT-Q-d6VP42JqkQaaIy0JsVuCOPWvKDYEdteNdqq20m1GZk4XV86p8Bt1wzm_nWXCd-u0H8_Qisg_qV7v3DCip8wu9CWmy1J4f0xYvibppNk35jwLOBBNwAM_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-highest/90 text-on-surface font-semibold tracking-wider">
+              CRITERION / OTT
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">8.3</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              91% Match
+            </span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Incendies
+            </h3>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2010</span>
+<span>•</span>
+<span>2h 11m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">R</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">MUBI</span>
+</div>
+<button class="text-label-md font-label-md text-primary hover:text-primary-fixed flex items-center gap-0.5">
+              Watch Now <span class="material-symbols-outlined text-[14px]">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 7: Enemy -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Enemy surreal psychological film visual with yellow ochre smog haze over Toronto skyline with an ominous gigantic silhouette looming above city towers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ckFkG-yaGvQS_PgO9UBSMR6VZp6SDmiX_3vW3z9LOzAvdzL1F4aoJvuXGq0rKljeslvtcdT7jyxBiuBxvuzDGiT3toalV9TtpBczBy5y467X4NUGiYOa2NbFbicqQ0GIo7hRkALr9sBTFcTgSxtrWn_QFO402D_M2wjQzrFQg-wGHZMeBu9WIsIk9enInYpY3gMncLymiKDNW0Gjg3z0PDByWVR4kfI9zUsoWEWF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-highest/90 text-on-surface font-semibold tracking-wider">
+              A24 ARCHIVE
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">6.9</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              88% Match
+            </span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Enemy
+            </h3>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2013</span>
+<span>•</span>
+<span>1h 31m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">R</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Max</span>
+</div>
+<button class="text-label-md font-label-md text-primary hover:text-primary-fixed flex items-center gap-0.5">
+              Watch Now <span class="material-symbols-outlined text-[14px]">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 8: Dune (Part One) -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 hover:border-outline-variant/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/80 flex flex-col">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Dune Part One theatrical poster depicting the ornithopter flying into a titanic desert sandstorm with Paul Atreides gazing into the swirling spice horizon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfe_DqqOMKIgbt8IFh1-WlPSUdWGzF31LN2yGPHQ9zlScf4y9ohfz6IODu1WooMv4dCR2GhKTdi0BfCiCd71KPFefdqnLNm2iCo_VuTVgy5yHjf8YrMmTXxFDdUrF2TIr5YsTBtCkqFLEv0LEAc3-qL_gR-vaibrKvAtQ0L2h1Fgx6PBDi0yVhFRYYOZdonx5fjmDko0hzL-AjMKmwrA-HWPIp5uGMirZLRZEYfAs1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/30"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-highest/90 text-on-surface font-semibold tracking-wider">
+              STREAMING OTT
+            </span>
+<button class="w-8 h-8 rounded-full bg-black/60 hover:bg-primary-container text-white backdrop-blur-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface font-bold">8.0</span>
+<span class="text-[10px] text-on-surface-variant">IMDb</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container text-label-sm font-label-sm font-bold">
+              97% Match
+            </span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col flex-grow justify-between gap-2 bg-surface-container-low">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Dune: Part One
+            </h3>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+<span>2021</span>
+<span>•</span>
+<span>2h 35m</span>
+<span>•</span>
+<span class="border border-outline-variant/40 px-1 rounded text-[10px]">PG-13</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Max</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-[11px] font-bold text-on-surface">Hulu</span>
+</div>
+<button class="text-label-md font-label-md text-primary hover:text-primary-fixed flex items-center gap-0.5">
+              Watch Now <span class="material-symbols-outlined text-[14px]">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- REFINED TASTE MATCH / EMPTY-STATE BANNER   -->
+<!-- ========================================== -->
+<section class="mt-4 rounded-2xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high border border-outline-variant/30 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-2xl bg-primary-container/20 border border-primary-container/40 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[32px]">filter_alt_off</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">No exact match for hyper-specific filters?</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mt-1">
+            Discover nearby taste matches crafted from Denis Villeneuve’s visual style or reset the filter matrix to see all matching cinematic selections.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="px-4 py-2 rounded-full border border-outline-variant/40 hover:bg-surface-variant/40 text-on-surface text-label-md font-label-md transition-colors">
+          Reset Matrix
+        </button>
+<button class="px-5 py-2 rounded-full bg-primary-container hover:bg-primary-container/90 text-on-primary-container text-label-md font-label-md transition-all active:scale-95 shadow-md shadow-primary-container/25 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+<span>Explore Taste Neighbors</span>
+</button>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- FOOTER (Shared Component)                  -->
+<!-- ========================================== -->
+<footer class="docked full-width bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 dark:border-outline-variant/20 mt-12">
+<div class="w-full max-w-7xl mx-auto px-gutter py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-lg">
+<!-- Footer Brand & Copyright Info -->
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">movie_filter</span>
+</span>
+<span>CINEMIND</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant text-center md:text-left max-w-md">
+          © 2025 CINEMIND Entertainment Inc. All rights reserved. Powered by TMDb &amp; Theatrical Motion Alliance.
+        </p>
+</div>
+<!-- Links Array from JSON -->
+<nav class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">
+          Partner Theatres
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">
+          Streaming Providers
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">
+          API &amp; Attribution
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">
+          Editorial Charter
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">
+          Privacy Policy
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-md hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#">
+          Terms of Service
+        </a>
+</nav>
+</div>
+</footer>
+</body></html>

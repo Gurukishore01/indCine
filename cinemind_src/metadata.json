@@ -1,0 +1,6 @@
+{
+  "name": "CINEMIND AIOS",
+  "description": "Domain-specific multi-agent AI Operating System for movie intelligence, discovery, and mood-based recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
